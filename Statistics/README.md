@@ -15,7 +15,7 @@
 1. Classification Problem:
 - Seaborn -> pairplot  
 
-import seaborn as sns
+import seaborn as sns  
 sns.pairplot(df, hue='TARGET CLASS')
 - If not overlapped too much, use Decision Tree for small dataset, Random Forest for large dataset (Non-linear Classification), these usually take longer time.
 - If almost completely overlapped, then use KNN (Non-linear Classification), KNN takes less time.
