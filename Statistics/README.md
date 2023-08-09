@@ -11,6 +11,8 @@
 - Clustering Model: K-Means, Hierarchical, Mean Shift, Density-based
 - Dimentionality Reduction (Feature Elimination/Extration): Principal Component Analysis(PCA) 
 
+# Reinforcement Learning: agent learning in interactive environment based on rewards and penalities.
+
 # Determining which model to use:
 1. Classification Problem: (Logistic regression, Support Vector Machines (SVM), Random Forest, Decision Tree, k-Nearest Neighbors/KNN):
 - Seaborn -> pairplot  
