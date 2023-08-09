@@ -13,7 +13,7 @@
 
 # How to choose what ML to use?
 1. Classification Problem:
-- Seaborn -> pairplot
+- Seaborn -> pairplot\n
 import seaborn as sns
 sns.pairplot(df, hue='TARGET CLASS')
 - If not overlapped too much, use Decision Tree for small dataset, Random Forest for large dataset (Non-linear Classification), these usually take longer time.
