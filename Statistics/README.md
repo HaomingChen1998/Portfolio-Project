@@ -10,7 +10,18 @@
 - It has two sub categories, Clustering and Dimensionality Reduction
 - Clustering Model: K-Means, Hierarchical, Mean Shift, Density-based
 - Dimentionality Reduction (Feature Elimination/Extration): Principal Component Analysis(PCA) 
-  
+
+# How to choose what ML to use?
+1. Classification Problem:
+- Seaborn -> pairplot
+import seaborn as sns
+sns.pairplot(df, hue='TARGET CLASS')
+- If not overlapped too much, use Decision Tree, Random Forest (Non-linear Classification)
+- If almost completely overlapped, then use KNN (Non-linear Classification)
+- If not overlapping, and I can draw a stright line in between, then log regression (Linear classification)
+
+
+# ML Categories
 1. Classification problems: Logistic regression, Support Vector Machines (SVM), Random Forest, Decision Tree, k-Nearest Neighbors (KNN). These models are designed to classify data points into different categories or classes based on their features.
 2. Clustering problems: K-Means Clustering, Hierarchical Clustering. These models are designed to group data points into clusters based on their similarity or distance from each other.
 3. Regression problems: Linear Regression, Random Forest Regression, ARIMA. These models are designed to predict a continuous numerical value based on input variables.
