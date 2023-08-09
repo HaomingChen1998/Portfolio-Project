@@ -13,7 +13,7 @@
 
 # How to choose what ML to use?
 1. Classification Problem:
-- Seaborn -> pairplot
+- Seaborn -> pairplot  
 
 import seaborn as sns
 sns.pairplot(df, hue='TARGET CLASS')
