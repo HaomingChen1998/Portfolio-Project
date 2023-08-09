@@ -1,4 +1,4 @@
-<h1 align="center">Machine Learning Model Usage</h1>
+<h1 align="center">Supervised Learning vs Unsupervised Learning</h1>
 
 # Supervised Learning has both x / input and y / output
 - It has two sub categories; Regression and Classification
@@ -11,7 +11,9 @@
 - Clustering Model: K-Means, Hierarchical, Mean Shift, Density-based
 - Dimentionality Reduction (Feature Elimination/Extration): Principal Component Analysis(PCA) 
 
-# How to choose what ML to use?
+<h1 align="center">How to choose what ML to use?</h1>
+
+# Type of Data available:
 1. Classification Problem:
 - Seaborn -> pairplot  
 
