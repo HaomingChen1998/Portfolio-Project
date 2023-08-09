@@ -21,6 +21,6 @@
 - If almost completely overlapped, then use KNN (Non-linear Classification), KNN takes less time.
 - If not overlapping, and I can draw a stright line in between, then log regression (Linear classification)
 2. Clustering problems: K-Means Clustering, Hierarchical Clustering
-3. Regression problems: Linear Regression, Polynomial Regression, Random Forest, etc
+3. Regression problems: Linear Regression, Polynomial Regression, Random Forest, Decision Tree
 4. Time Series problems: ARIMA, Prophet
 
