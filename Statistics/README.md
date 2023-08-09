@@ -5,7 +5,7 @@
 - Regression Model: Linear Regression, Decision Tree, Random Forest, Neural Network
 - Classification Model: Logistic Regression, Support Vector Machine, Naive Bayes, Decision Tree, Random Forest, Neural Network.
 
-# Unsupervised Learning 
+# Unsupervised Learning has only x / input without y / output
 - Infer patterns from input data without references to labeled outcomes.
 - It has two sub categories, Clustering and Dimensionality Reduction
 - Clustering Model: K-Means, Hierarchical, Mean Shift, Density-based
