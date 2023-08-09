@@ -1,4 +1,5 @@
 %Machine Learning Model Usage
+==============
 # Supervised Learning has both x / input and y / output
 - It has two sub categories; Regression and Classification
 - Regression Model: Linear Regression, Decision Tree, Random Forest, Neural Network
