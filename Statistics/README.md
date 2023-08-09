@@ -13,8 +13,8 @@
 
 <h1 align="center">How to choose what ML to use?</h1>
 
-# Type of Data available:
-1. Classification Problem:
+# Determining which model to use:
+1. Classification Problem: (Logistic regression, Support Vector Machines (SVM), Random Forest, Decision Tree, k-Nearest Neighbors/KNN):
 - Seaborn -> pairplot  
 
     import seaborn as sns  
@@ -22,11 +22,7 @@
 - If not overlapped too much, use Decision Tree for small dataset, Random Forest for large dataset (Non-linear Classification), these usually take longer time.
 - If almost completely overlapped, then use KNN (Non-linear Classification), KNN takes less time.
 - If not overlapping, and I can draw a stright line in between, then log regression (Linear classification)
+2. Clustering problems: K-Means Clustering, Hierarchical Clustering
+3. Regression problems: Linear Regression, Polynomial Regression, Random Forest, etc
+4. Time Series problems: ARIMA, Prophet
 
-
-# ML Categories
-1. Classification problems: Logistic regression, Support Vector Machines (SVM), Random Forest, Decision Tree, k-Nearest Neighbors (KNN). These models are designed to classify data points into different categories or classes based on their features.
-- Ex: Whether or not someone is overweight [YES or NO]
-3. Clustering problems: K-Means Clustering, Hierarchical Clustering. These models are designed to group data points into clusters based on their similarity or distance from each other.
-4. Regression problems: Linear Regression, Random Forest Regression, ARIMA. These models are designed to predict a continuous numerical value based on input variables.
-5. Time Series problems: ARIMA, Prophet. These models are designed to forecast future values based on historical time series data.
