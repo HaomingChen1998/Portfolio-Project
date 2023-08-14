@@ -14,7 +14,7 @@
 # Reinforcement Learning: agent learning in interactive environment based on rewards and penalities.
 - Giving reward to the computer, and letting it know what's something good that it should keep doing, and what's something bad, that it should stop doing.
 
-<h1 align="center">Different Models</h1>
+<h1 align="center">Accuracy Measurement for Different Models</h1>
 
 # Regression:
   - Accuracy measured by following:
