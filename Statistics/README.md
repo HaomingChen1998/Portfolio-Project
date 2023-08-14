@@ -56,16 +56,15 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
 - Accuracy: The accuracy of the model in decimal form.
 `   # Accuracy Score
     from sklearn.metrics import accuracy_score  
-    print('Accuracy Score: ', accuracy_score(y_test, y_pred))  
+    print('Accuracy Score: ', accuracy_score(y_test, y_pred))  `
 
-    # Confusion Matrix
+    `# Confusion Matrix
     from sklearn.metrics import confusion_matrix  
-    confusion_matrix(y_test, predictions)
+    confusion_matrix(y_test, predictions)`
     
-    # Check Precision, Recall, and F1-score using classification report  
+    `# Check Precision, Recall, and F1-score using classification report  
     from sklearn.metrics import classification_report  
-    print(classification_report(y_test,predictions))
-  `
+    print(classification_report(y_test,predictions))`
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/Log%20Evaluation.png)
 
 <h1 align="center">Save Created Model as a file</h1>
