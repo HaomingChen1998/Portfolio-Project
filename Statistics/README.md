@@ -56,17 +56,17 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
 - Support: The number of samples each metric was calculated on.
 - Accuracy: The accuracy of the model in decimal form.
 ```
-    # Accuracy Score
-    from sklearn.metrics import accuracy_score  
-    print('Accuracy Score: ', accuracy_score(y_test, y_pred))  
+# Accuracy Score
+from sklearn.metrics import accuracy_score  
+print('Accuracy Score: ', accuracy_score(y_test, y_pred))  
 
-    # Confusion Matrix
-    from sklearn.metrics import confusion_matrix  
-    confusion_matrix(y_test, predictions)
-    
-    # Check Precision, Recall, and F1-score using classification report  
-    from sklearn.metrics import classification_report  
-    print(classification_report(y_test,predictions))
+# Confusion Matrix
+from sklearn.metrics import confusion_matrix  
+confusion_matrix(y_test, predictions)
+
+# Check Precision, Recall, and F1-score using classification report  
+from sklearn.metrics import classification_report  
+print(classification_report(y_test,predictions))
 ```
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/Log%20Evaluation.png)
 
@@ -75,18 +75,18 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
 1. You don't want to re-run the model every time, so save it as a file using the following code:
 ---  
 
-    # Export model as a file  
-    from sklearn.externals import joblib  
-    joblib.dump(created_model_name, 'new_file_name.joblib')  
-    # Loading the model againc
-    model = joblib.load('new_file_name.joblib'
+# Export model as a file  
+from sklearn.externals import joblib  
+joblib.dump(created_model_name, 'new_file_name.joblib')  
+# Loading the model againc
+model = joblib.load('new_file_name.joblib'
 
 <h1 align="center">Determining which model to use:</h1>
 1. Classification Problem: (Logistic regression, Support Vector Machines (SVM), Random Forest, Decision Tree, k-Nearest Neighbors/KNN):
 - Seaborn -> pairplot  
 ```
-    import seaborn as sns  
-    sns.pairplot(df, hue='TARGET CLASS')
+import seaborn as sns  
+sns.pairplot(df, hue='TARGET CLASS')
 ```
 - If not overlapped too much, use Decision Tree for small dataset, Random Forest for large dataset (Non-linear Classification), these usually take longer time.
 - If almost completely overlapped, then use KNN (Non-linear Classification), KNN takes less time.
