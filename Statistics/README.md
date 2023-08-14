@@ -76,7 +76,8 @@ print(classification_report(y_test,predictions))
 ```
 # Export model as a file  
 from sklearn.externals import joblib  
-joblib.dump(created_model_name, 'new_file_name.joblib')  
+joblib.dump(created_model_name, 'new_file_name.joblib')
+ 
 # Loading the model againc
 model = joblib.load('new_file_name.joblib'
 ```
