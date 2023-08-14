@@ -26,7 +26,7 @@
 2. Clustering problems: K-Means Clustering, Hierarchical Clustering
 3. Regression problems: Linear Regression, Polynomial Regression, Random Forest, Decision Tree
   - Accuracy measured by following:
-  - R-Square: goodness of fit
+  - R-Square (Coeff of Determination): goodness of fit
   - Adjusted R-Square: 40% means only 40% of the y variable are explained by the x variables. Meaning I need to add more correlated x variables to improve the model. If I added a new x variable, and I want to know if this new x variable is correlated to the y variable, I can compare the old adjusted r square with the new adjusted r square. If the new adjusted r square is higher, then it indicates there is correlation and more of y are explained by x variables. Note that correlation != casuation.
   - MAE (Mean Absolute Error): Sum of all resdiuals/error, and take the average by dividing all of the data points we have.
   - MSE (Mean Squared Error): Similar to MAE, but instead of absolute value, we squared it. It punishes large errors in the prediction, but it gets tricky to compare to y.
