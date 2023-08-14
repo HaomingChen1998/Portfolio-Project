@@ -54,6 +54,7 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
 - Support: The number of samples each metric was calculated on.
 - Accuracy: The accuracy of the model in decimal form.
 ---  
+
     # Accuracy Score
     from sklearn.metrics import accuracy_score  
     print('Accuracy Score: ', accuracy_score(y_test, y_pred))  
