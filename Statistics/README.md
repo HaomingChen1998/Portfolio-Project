@@ -14,7 +14,7 @@
 3. **<small>Reinforcement Learning: agent learning in interactive environment based on rewards and penalities.**<small>
 - Giving reward to the computer, and letting it know what's something good that it should keep doing, and what's something bad, that it should stop doing.
 
-<h1 align="center">Accuracy Measurement for Different Models</h1>
+<h1 align="center">Model Evaluation</h1>
 
 **<small>Linear Regression:**<small>
   - R-Square (Coeff of Determination): goodness of fit
