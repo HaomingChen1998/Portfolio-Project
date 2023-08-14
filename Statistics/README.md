@@ -73,13 +73,13 @@ print(classification_report(y_test,predictions))
 <h1 align="center">Save Created Model as a file</h1>
 
 1. You don't want to re-run the model every time, so save it as a file using the following code:
----  
-
+```
 # Export model as a file  
 from sklearn.externals import joblib  
 joblib.dump(created_model_name, 'new_file_name.joblib')  
 # Loading the model againc
 model = joblib.load('new_file_name.joblib'
+```
 
 <h1 align="center">Determining which model to use:</h1>
 1. Classification Problem: (Logistic regression, Support Vector Machines (SVM), Random Forest, Decision Tree, k-Nearest Neighbors/KNN):
