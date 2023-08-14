@@ -69,7 +69,7 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
     print(classification_report(y_test,predictions))
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/Log%20Evaluation.png)
 
-**<small>Save Created Model as a file:**<small>
+<h1 align="center">Save Created Model as a file</h1>
 
 1. You don't want to re-run the model every time, so save it as a file using the following code:
 ---  
