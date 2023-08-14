@@ -22,7 +22,7 @@
   - MAE (Mean Absolute Error): Sum of all resdiuals/error, and take the average by dividing all of the data points we have.
   - MSE (Mean Squared Error): Similar to MAE, but instead of absolute value, we squared it. It punishes large errors in the prediction, but it gets tricky to compare to y.
   - RMSE (Root Mean Squared Error): Take square root of MSE, so it punishes large errors in prediction, but also allow you to compare to y because they are in the same unit.
----  
+```
     # MAE, MSE, MAE  
     from sklearn import metrics  
     print('MAE:', metrics.mean_absolute_error(y_test, prediction))  
@@ -39,7 +39,8 @@
     n = x_test.shape[0]  
     adj_r2 = 1-(1-r2)*(n-1)/(n-k-1)  
     adj_r2  
-  
+```
+
 **<small>Logistic Regression:**<small>
 1. Imagine you have class A for apples and class B for bananas. If your model avoid a lot of mistakes in predicting bananas as apples, then your model has high precision. If your model avoid lots of mistakes in predicting apples as bananas, then your model has a high recall. You want your model to aim high for both precision and recall. But if your model is really good at predicting one class, but sucks at predicting the other class, it would be misleading to look at them individually. F1 takes account both precision and recall, high F1 score means your model is doing a good job at predicting both apples and bananas.  
 2. There might be some cases you might want to focus on precision over recall or vice versa. Imagine you have class A for aggressive cancer, class for no cancer. The stacks of misleading cancer for no cancer is high, so you want your model to avoid mistaking cancer as no cancer.
@@ -83,9 +84,10 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
 <h1 align="center">Determining which model to use:</h1>
 1. Classification Problem: (Logistic regression, Support Vector Machines (SVM), Random Forest, Decision Tree, k-Nearest Neighbors/KNN):
 - Seaborn -> pairplot  
-
+```
     import seaborn as sns  
     sns.pairplot(df, hue='TARGET CLASS')
+```
 - If not overlapped too much, use Decision Tree for small dataset, Random Forest for large dataset (Non-linear Classification), these usually take longer time.
 - If almost completely overlapped, then use KNN (Non-linear Classification), KNN takes less time.
 - If not overlapping, and I can draw a stright line in between, then log regression (Linear classification)
