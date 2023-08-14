@@ -14,6 +14,29 @@
 # Reinforcement Learning: agent learning in interactive environment based on rewards and penalities.
 - Giving reward to the computer, and letting it know what's something good that it should keep doing, and what's something bad, that it should stop doing.
 
+<h1 align="center">Different Models</h1>
+
+# Regression:
+  - Accuracy measured by following:
+  - R-Square (Coeff of Determination): goodness of fit
+  - Adjusted R-Square: 40% means only 40% of the y variable are explained by the x variables. Meaning I need to add more correlated x variables to improve the model. If I added a new x variable, and I want to know if this new x variable is correlated to the y variable, I can compare the old adjusted r square with the new adjusted r square. If the new adjusted r square is higher, then it indicates there is correlation and more of y are explained by x variables. Note that correlation != casuation.
+  - MAE (Mean Absolute Error): Sum of all resdiuals/error, and take the average by dividing all of the data points we have.
+  - MSE (Mean Squared Error): Similar to MAE, but instead of absolute value, we squared it. It punishes large errors in the prediction, but it gets tricky to compare to y.
+  - RMSE (Root Mean Squared Error): Take square root of MSE, so it punishes large errors in prediction, but also allow you to compare to y because they are in the same unit.  
+    from sklearn import metrics
+    print('MAE:', metrics.mean_absolute_error(y_test, prediction))
+    print('MSE:', metrics.mean_squared_error(y_test, prediction))
+    print('MAE:', np.sqrt(metrics.mean_squared_error(y_test, prediction)))
+    
+    from sklearn.metrics import r2_score
+    r2 = r2_score(y_test, y_predict)
+    r2
+    
+    k = x_test.shape[1]
+    n = x_test.shape[0]
+    adj_r2 = 1-(1-r2)*(n-1)/(n-k-1)
+    adj_r2
+
 # Determining which model to use:
 1. Classification Problem: (Logistic regression, Support Vector Machines (SVM), Random Forest, Decision Tree, k-Nearest Neighbors/KNN):
 - Seaborn -> pairplot  
