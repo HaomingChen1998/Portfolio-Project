@@ -24,18 +24,18 @@
   - MSE (Mean Squared Error): Similar to MAE, but instead of absolute value, we squared it. It punishes large errors in the prediction, but it gets tricky to compare to y.
   - RMSE (Root Mean Squared Error): Take square root of MSE, so it punishes large errors in prediction, but also allow you to compare to y because they are in the same unit.
 
-    *# MAE, MSE, MAE*
+    *# MAE, MSE, MAE*  
     from sklearn import metrics
     print('MAE:', metrics.mean_absolute_error(y_test, prediction))
     print('MSE:', metrics.mean_squared_error(y_test, prediction))
     print('MAE:', np.sqrt(metrics.mean_squared_error(y_test, prediction)))
 
-    *# R Squared*
+    *# R Squared*  
     from sklearn.metrics import r2_score
     r2 = r2_score(y_test, y_predict)
     r2
 
-    *# Adjusted R Squared*
+    *# Adjusted R Squared*  
     k = x_test.shape[1]
     n = x_test.shape[0]
     adj_r2 = 1-(1-r2)*(n-1)/(n-k-1)
