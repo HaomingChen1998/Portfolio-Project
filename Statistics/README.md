@@ -54,9 +54,7 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
 - F1 Score: A combination of precision and recall.
 - Support: The number of samples each metric was calculated on.
 - Accuracy: The accuracy of the model in decimal form.
----  
-
-    # Accuracy Score
+`   # Accuracy Score
     from sklearn.metrics import accuracy_score  
     print('Accuracy Score: ', accuracy_score(y_test, y_pred))  
 
@@ -67,6 +65,7 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
     # Check Precision, Recall, and F1-score using classification report  
     from sklearn.metrics import classification_report  
     print(classification_report(y_test,predictions))
+  `
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/Log%20Evaluation.png)
 
 <h1 align="center">Save Created Model as a file</h1>
@@ -98,4 +97,3 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
   - MSE (Mean Squared Error): Similar to MAE, but instead of absolute value, we squared it. It punishes large errors in the prediction, but it gets tricky to compare to y.
   - RMSE (Root Mean Squared Error): Take square root of MSE, so it punishes large errors in prediction, but also allow you to compare to y because they are in the same unit.
 4. Time Series problems: ARIMA, Prophet
-
