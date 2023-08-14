@@ -80,7 +80,7 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
     # Loading the model againc
     model = joblib.load('new_file_name.joblib'
 
-# Determining which model to use:
+<h1 align="center">Determining which model to use:</h1>
 1. Classification Problem: (Logistic regression, Support Vector Machines (SVM), Random Forest, Decision Tree, k-Nearest Neighbors/KNN):
 - Seaborn -> pairplot  
 
