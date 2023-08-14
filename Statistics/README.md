@@ -1,17 +1,17 @@
 <h1 align="center">Supervised Learning vs Unsupervised Learning</h1>
 
-# Supervised Learning has both x / input and y / output
+1. Supervised Learning has both x / input and y / output
 - It has two sub categories; Regression and Classification
 - Regression Model: Linear Regression, Decision Tree, Random Forest, Neural Network
 - Classification Model: Logistic Regression, Support Vector Machine, Naive Bayes, Decision Tree, Random Forest, Neural Network.
 
-# Unsupervised Learning has only x / input without y / output
+2. Unsupervised Learning has only x / input without y / output
 - Infer patterns from input data without references to labeled outcomes.
 - It has two sub categories, Clustering and Dimensionality Reduction
 - Clustering Model: K-Means, Hierarchical, Mean Shift, Density-based
 - Dimentionality Reduction (Feature Elimination/Extration): Principal Component Analysis(PCA) 
 
-# Reinforcement Learning: agent learning in interactive environment based on rewards and penalities.
+3. Reinforcement Learning: agent learning in interactive environment based on rewards and penalities.
 - Giving reward to the computer, and letting it know what's something good that it should keep doing, and what's something bad, that it should stop doing.
 
 <h1 align="center">Accuracy Measurement for Different Models</h1>
