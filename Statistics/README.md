@@ -49,6 +49,14 @@
 - Support: The number of samples each metric was calculated on.
 - Accuracy: The accuracy of the model in decimal form.
 ---  
+    # Accuracy Score
+    from sklearn.metrics import accuracy_score  
+    print('Accuracy Score: ', accuracy_score(y_test, y_pred))  
+
+    # Confusion Matrix
+    from sklearn.metrics import confusion_matrix  
+    confusion_matrix(y_test, predictions)
+    
     # Check Precision, Recall, and F1-score using classification report  
     from sklearn.metrics import classification_report  
     print(classification_report(y_test,predictions))
