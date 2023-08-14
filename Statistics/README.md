@@ -78,8 +78,8 @@ print(classification_report(y_test,predictions))
 from sklearn.externals import joblib  
 joblib.dump(created_model_name, 'new_file_name.joblib')
  
-# Loading the model againc
-model = joblib.load('new_file_name.joblib'
+# Loading the model again
+model = joblib.load('new_file_name.joblib')
 ```
 
 <h1 align="center">Determining which model to use:</h1>
