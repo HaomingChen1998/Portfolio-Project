@@ -50,7 +50,7 @@
     # Check Precision, Recall, and F1-score using classification report  
     from sklearn.metrics import classification_report  
     print(classification_report(y_test,predictions))
-![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Healthcare%20Insurance%20Consumer%20Marketing/Screenshot_3.png)
+![App Screenshot]([https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Healthcare%20Insurance%20Consumer%20Marketing/Screenshot_3.png](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/Log%20Evaluation.png)
 
 # Determining which model to use:
 1. Classification Problem: (Logistic regression, Support Vector Machines (SVM), Random Forest, Decision Tree, k-Nearest Neighbors/KNN):
