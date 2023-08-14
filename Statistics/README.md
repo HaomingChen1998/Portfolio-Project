@@ -71,7 +71,7 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
 
 **<small>Save Created Model as a file:**<small>
 1. You don't want to re-run the model every time, so save it as a file using the following code:
----  
+
 
     # Export model as a file  
     from sklearn.externals import joblib  
