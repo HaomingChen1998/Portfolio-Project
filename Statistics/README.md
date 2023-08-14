@@ -43,6 +43,11 @@
 **<small>Logistic Regression:**<small>
 1. Imagine you have class A for apples and class B for bananas. If your model avoid a lot of mistakes in predicting bananas as apples, then your model has high precision. If your model avoid lots of mistakes in predicting apples as bananas, then your model has a high recall. You want your model to aim high for both precision and recall. But if your model is really good at predicting one class, but sucks at predicting the other class, it would be misleading to look at them individually. F1 takes account both precision and recall, high F1 score means your model is doing a good job at predicting both apples and bananas.  
 2. There might be some cases you might want to focus on precision over recall or vice versa. Imagine you have class A for aggressive cancer, class for no cancer. The stacks of misleading cancer for no cancer is high, so you want your model to avoid mistaking cancer as no cancer.
+- Precision: The proportion of positive identifications which were actually correct.
+- Recall: The proportion of actual positives which were correctly classified.
+- F1 Score: A combination of precision and recall.
+- Support: The number of samples each metric was calculated on.
+- Accuracy: The accuracy of the model in decimal form.
 ---  
     # Check Precision, Recall, and F1-score using classification report  
     from sklearn.metrics import classification_report  
