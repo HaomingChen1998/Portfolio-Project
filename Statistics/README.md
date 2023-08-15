@@ -96,3 +96,8 @@ sns.pairplot(df, hue='TARGET CLASS')
 2. Clustering problems: K-Means Clustering, Hierarchical Clustering
 3. Regression problems: Linear Regression, Polynomial Regression, Random Forest, Decision Tree
 4. Time Series problems: ARIMA, Prophet
+
+<h1 align="center">Model Definition:</h1>
+
+1. KNN (K-Nearest Neighbors)
+- Classifies the new data or case based on a similarity measure. It is mostly used to classifies a data point based on how its neighbours are classified.
