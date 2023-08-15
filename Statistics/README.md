@@ -114,6 +114,7 @@ sns.pairplot(df, hue='TARGET CLASS')
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/SVM.png)
 Different Dimensions:
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/SVM%20different%20dimension.png)
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/SVM%20Dimension.gif)
 5. **<small>K-Means Clustering for Classification (Unsupervised Learning without Label / y)**<small>
 - Used for clustering data points into groups based on their similarity. The algorithm works by first randomly initializing K cluster centers, where K is the number of clusters desired. Then, for each data point, the algorithm assigns it to the nearest cluster center based on its distance to that center. After all data points are assigned to a cluster, the algorithm updates the cluster centers to be the mean of all the data points in that cluster. The algorithm then iteratively repeats this process of assigning data points to clusters and updating cluster centers until convergence is reached, where the assignment of data points to clusters no longer changes. The result is K clusters of data points that are similar to each other and dissimilar to data points in other clusters. K-means is commonly used for customer segmentation, image segmentation, and anomaly detection.
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/K%20Means.gif)
