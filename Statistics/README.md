@@ -112,4 +112,6 @@ sns.pairplot(df, hue='TARGET CLASS')
 4. **<small>SVM (Suuport Vector Machines) for Classification**<small>
 - Finding the optimal hyperplane (i.e. decision boundary) that separates the data into different classes. The hyperplane is chosen such that it maximizes the margin, which is the distance between the hyperplane and the closest data points from each class. SVM can be used for both linearly separable and non-linearly separable data by using different types of kernels that transform the data into a higher dimensional space where it can be linearly separated. SVM is a popular machine learning algorithm due to its ability to handle high-dimensional data, handle non-linear decision boundaries, and its ability to avoid overfitting.
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/SVM.png)
+Different Dimensions:
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/SVM%20different%20dimension.png)
+5. **<small>K-Means Clustering for Classification**<small>
