@@ -109,7 +109,7 @@ sns.pairplot(df, hue='TARGET CLASS')
 3. **<small>Logistic Regression for Classification**<small>
 - Used for binary classification problems, where the goal is to predict a binary outcome (e.g. yes or no, true or false, 0 or 1) based on a set of input features. It works by modeling the probability of the binary outcome as a function of the input features using a logistic function, which maps any input value to a value between 0 and 1.
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/Log.png)
-4. **<small>SVM (Suuport Vector Machines) for Classification**<small>
+4. **<small>SVM (Support Vector Machines) for Classification**<small>
 - Finding the optimal hyperplane (i.e. decision boundary) that separates the data into different classes. The hyperplane is chosen such that it maximizes the margin, which is the distance between the hyperplane and the closest data points from each class. SVM can be used for both linearly separable and non-linearly separable data by using different types of kernels that transform the data into a higher dimensional space where it can be linearly separated. SVM is a popular machine learning algorithm due to its ability to handle high-dimensional data, handle non-linear decision boundaries, and its ability to avoid overfitting.
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/SVM.png)
 Different Dimensions:
