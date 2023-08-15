@@ -121,3 +121,4 @@ Different Dimensions:
 6. **<small>PCA (Principal Component Analysis), (Unsupervised Learning without Label / y)**<small>
 - It is a technique used for dimensionality reduction in machine learning. The goal of PCA is to reduce the number of features in a dataset while retaining as much of the variation in the data as possible.
 - PCA works by identifying the directions in which the data varies the most, known as the principal components. It then projects the data onto these principal components, creating a new set of features that capture most of the variation in the original data. The new features are linear combinations of the original features, so they are uncorrelated with each other.
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/PCA.gif)
