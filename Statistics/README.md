@@ -99,10 +99,13 @@ sns.pairplot(df, hue='TARGET CLASS')
 
 <h1 align="center">Model Definition:</h1>
 
-1. **<small>KNN (K-Nearest Neighbors)**<small>
+1. **<small>KNN (K-Nearest Neighbors) for Classification**<small>
 - Classifies the new data or case based on a similarity measure. It is mostly used to classifies a data point based on how its neighbours are classified. It looks at what's around you, and take the label of the majority that's around you.
 - K stands for how many neighbors do we use to judge what the label is. Usually we use 3 or 5 for k.  
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/KNN.png)
-2. **<small>Naive Bayes**<small>
-- Used for classification tasks. It describes the probability of an event occurring based on prior knowledge of conditions that might be related to the event. We assume the features are independent of each other which simplifies the calculations, making it a fast and efficient algorithm.
+2. **<small>Naive Bayes for Classification**<small>
+-  It describes the probability of an event occurring based on prior knowledge of conditions that might be related to the event. We assume the features are independent of each other which simplifies the calculations, making it a fast and efficient algorithm.
 - By ignoring relationships among words, it has high bias. Since it works well in practice, it has low variance. It's often used in identifing Spam vs Normal messages.
+3. **<small>Logistic Regression for Classification**<small>
+- Used for binary classification problems, where the goal is to predict a binary outcome (e.g. yes or no, true or false, 0 or 1) based on a set of input features. It works by modeling the probability of the binary outcome as a function of the input features using a logistic function, which maps any input value to a value between 0 and 1.
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/Log.png)
