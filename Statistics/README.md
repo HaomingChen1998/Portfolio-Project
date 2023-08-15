@@ -114,5 +114,6 @@ sns.pairplot(df, hue='TARGET CLASS')
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/SVM.png)
 Different Dimensions:
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/SVM%20different%20dimension.png)
-5. **<small>K-Means Clustering for Classification (Unsupervised Learning without Label/y)**<small>
+5. **<small>K-Means Clustering for Classification (Unsupervised Learning without Label / y)**<small>
 - 
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/K%20Means.gif)
