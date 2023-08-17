@@ -1,7 +1,7 @@
 # Markdown
 ```
-1. -# for bold title-
-2. -double space for new line-
+1. # for bold title
+2. double space for new line
 3. **text** for bold  
 ```
 
