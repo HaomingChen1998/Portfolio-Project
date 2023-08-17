@@ -1,9 +1,9 @@
 # Markdown
-'''
+```
 1. -# for bold title-
 2. -double space for new line-
 3. **text** for bold  
-'''
+```
 
 # Visualization with Pandas
 There are several plot types built into pandas; most of them are statistical by nature:
