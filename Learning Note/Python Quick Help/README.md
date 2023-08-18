@@ -24,7 +24,7 @@ df.plot.pie()
 You can also call specific plots by passing their name as an argument, as with 
 df.plot (kind=' area').
 
-EXAMPLES:
+EXAMPLES:  
 ```
 df['Column_Name'].plot.hist()
 ```   
