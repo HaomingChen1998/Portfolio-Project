@@ -68,7 +68,7 @@ confusion_matrix(y_test, predictions)
 from sklearn.metrics import classification_report  
 print(classification_report(y_test,predictions))
 ```
-![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/Log%20Evaluation.png)
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Log%20Evaluation.png)
 
 <h1 align="center">Save Created Model as a file</h1>
 
@@ -102,23 +102,23 @@ sns.pairplot(df, hue='TARGET CLASS')
 1. **<small>KNN (K-Nearest Neighbors) for Classification**<small>
 - Classifies the new data or case based on a similarity measure. It is mostly used to classifies a data point based on how its neighbours are classified. It looks at what's around you, and take the label of the majority that's around you.
 - K stands for how many neighbors do we use to judge what the label is. Usually we use 3 or 5 for k.  
-![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/KNN.png)
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/KNN.png)
 2. **<small>Naive Bayes for Classification**<small>
 -  It describes the probability of an event occurring based on prior knowledge of conditions that might be related to the event. We assume the features are independent of each other which simplifies the calculations, making it a fast and efficient algorithm.
 - By ignoring relationships among words, it has high bias. Since it works well in practice, it has low variance. It's often used in identifing Spam vs Normal messages.
 3. **<small>Logistic Regression for Classification**<small>
 - Used for binary classification problems, where the goal is to predict a binary outcome (e.g. yes or no, true or false, 0 or 1) based on a set of input features. It works by modeling the probability of the binary outcome as a function of the input features using a logistic function, which maps any input value to a value between 0 and 1.
-![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/Log.png)
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Log.png)
 4. **<small>SVM (Support Vector Machines) for Classification**<small>
 - Finding the optimal hyperplane (i.e. decision boundary) that separates the data into different classes. The hyperplane is chosen such that it maximizes the margin, which is the distance between the hyperplane and the closest data points from each class. SVM can be used for both linearly separable and non-linearly separable data by using different types of kernels that transform the data into a higher dimensional space where it can be linearly separated. SVM is a popular machine learning algorithm due to its ability to handle high-dimensional data, handle non-linear decision boundaries, and its ability to avoid overfitting.
-![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/SVM.png)
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/SVM.png)
 Different Dimensions:
-![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/SVM%20different%20dimension.png)
-![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/SVM%20Dimension.gif)
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/SVM%20different%20dimension.png)
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/SVM%20Dimension.gif)
 5. **<small>K-Means Clustering for Classification (Unsupervised Learning without Label / y)**<small>
 - Used for clustering data points into groups based on their similarity. The algorithm works by first randomly initializing K cluster centers, where K is the number of clusters desired. Then, for each data point, the algorithm assigns it to the nearest cluster center based on its distance to that center. After all data points are assigned to a cluster, the algorithm updates the cluster centers to be the mean of all the data points in that cluster. The algorithm then iteratively repeats this process of assigning data points to clusters and updating cluster centers until convergence is reached, where the assignment of data points to clusters no longer changes. The result is K clusters of data points that are similar to each other and dissimilar to data points in other clusters. K-means is commonly used for customer segmentation, image segmentation, and anomaly detection.
-![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/K%20Means.gif)
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/K%20Means.gif)
 6. **<small>PCA (Principal Component Analysis), (Unsupervised Learning without Label / y)**<small>
 - It is a technique used for dimensionality reduction in machine learning. The goal of PCA is to reduce the number of features in a dataset while retaining as much of the variation in the data as possible.
 - PCA works by identifying the directions in which the data varies the most, known as the principal components. It then projects the data onto these principal components, creating a new set of features that capture most of the variation in the original data. The new features are linear combinations of the original features, so they are uncorrelated with each other.
-![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Statistics/Photo/PCA.gif)
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/PCA.gif)
