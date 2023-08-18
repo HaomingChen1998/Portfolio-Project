@@ -25,6 +25,8 @@ You can also call specific plots by passing their name as an argument, as with
 df.plot (kind=' area').
 
 EXAMPLES:
-df['Column_Name'].plot.hist()    
+```
+df['Column_Name'].plot.hist()
+```   
 ; If you can see the edge, you can modify the code like hist(edgecolor='k')
 ; If you want more bars, hist(bin=20), the number can be whatever number of bars.
