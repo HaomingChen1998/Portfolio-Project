@@ -8,6 +8,7 @@
 # Visualization with Pandas
 There are several plot types built into pandas; most of them are statistical by nature:
 
+```
 df.plot.hist()
 df.plot.barh()
 df.plot.line()
@@ -18,6 +19,7 @@ df.plot.scatter()
 df.plot.box()
 df.plot.kde()
 df.plot.pie()
+```
 
 You can also call specific plots by passing their name as an argument, as with 
 df.plot (kind=' area').
