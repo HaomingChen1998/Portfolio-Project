@@ -6,7 +6,7 @@
 ```
 
 # Visualization with Pandas
-There are several plot types built into pandas; most of them are statistical by nature:
+There are several plot types built into pandas; most of them are statistical by nature:  
 
 ```
 df.plot.hist()
