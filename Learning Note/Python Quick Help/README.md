@@ -28,5 +28,5 @@ EXAMPLES:
 ```
 df['Column_Name'].plot.hist()
 ```   
-; If you can see the edge, you can modify the code like hist(edgecolor='k')
-; If you want more bars, hist(bin=20), the number can be whatever number of bars.
+If you can see the edge, you can modify the code like hist(edgecolor='k')  
+If you want more bars, hist(bin=20), the number can be whatever number of bars.
