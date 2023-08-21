@@ -57,7 +57,7 @@ sns.scatterplot(x='column_name', y='column_name', hue='Year', data=df)
 sns.pairplot(df, var=['column_name', 'column_name2'], hue='column_name')
 
 df_corr = df[['column_name', 'column_name2']].dropna().corr()
-sns.heatmap(df_corr)
+sns.heatmap(df_corr, annot=True)
 
 plt.show()
 ```
