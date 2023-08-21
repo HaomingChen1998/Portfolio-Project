@@ -5,6 +5,13 @@
 3. **text** for bold  
 ```
 
+# Helpful Syntax
+```
+1. pd.set_option('max_columns', 200)
+2. plt.style.use('ggplot')
+```
+
+
 # Visualization with Pandas
 There are several plot types built into pandas; most of them are statistical by nature:  
 
