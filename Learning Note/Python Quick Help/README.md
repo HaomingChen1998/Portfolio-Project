@@ -11,6 +11,7 @@
 2. plt.style.use('ggplot')
 3. df.drop(['column_name'], axis=1)
 4. df.rename(columns={'old_name':'new_name', 'old_name2':'new_name2'})
+5. 
 ```
 
 
