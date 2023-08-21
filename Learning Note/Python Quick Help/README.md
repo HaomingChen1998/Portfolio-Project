@@ -50,3 +50,10 @@ df.set_ylabel('ylabel_name')
 bins=20
 ```
 
+# Visualization with Seaborn
+
+```
+sns.scatterplot(x='column_name', y='column_name', hue='Year', data=df)
+sns.pairplot(df, var=['column_name', 'column_name2'], hue='column_name')
+plt.show()
+```
