@@ -7,13 +7,13 @@
 
 # Helpful Syntax
 ```
-1. pd.set_option('max_columns', 200)
-2. plt.style.use('ggplot')
-3. df.drop(['column_name'], axis=1)
-4. df.rename(columns={'old_name':'new_name', 'old_name2':'new_name2'})
-5. df['Timestamp'] = df['Timestamp'].astype('datetime64[ns]')
-6. df.query('Coaster_Name == "Beach"')           # show data when coaster_name = beach
-7. df['Gender'].value_counts()                     # count the number of occurrences of each unique value. Ex: Male 30, Female 29
+pd.set_option('max_columns', 200)
+plt.style.use('ggplot')
+df.drop(['column_name'], axis=1)
+df.rename(columns={'old_name':'new_name', 'old_name2':'new_name2'})
+df['Timestamp'] = df['Timestamp'].astype('datetime64[ns]')
+df.query('Coaster_Name == "Beach"')           # show data when coaster_name = beach
+df['Gender'].value_counts()                     # count the number of occurrences of each unique value. Ex: Male 30, Female 29
 ```
 
 
