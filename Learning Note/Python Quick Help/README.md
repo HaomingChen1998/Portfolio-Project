@@ -11,11 +11,12 @@ pd.set_option('max_columns', 200)
 plt.style.use('ggplot')
 df.drop(['column_name'], axis=1)
 df.rename(columns={'old_name':'new_name', 'old_name2':'new_name2'})
+df.columns = df.columns.str.replace(' ', '_')          # Replace space with underscore.
 df['Timestamp'] = df['Timestamp'].astype('datetime64[ns]')
 df.query('Coaster_Name == "Beach"')           # show data when coaster_name = beach
 df['Gender'].value_counts()                     # count the number of occurrences of each unique value. Ex: Male 30, Female 29
-df.columns = df.columns.str.replace(' ', '_')  # Replace space with underscore.
-
+pd.DataFrame(np.random.rand(4,8))                # Create an example DataFrame to quickly show something
+pd.to_numeeric(df.col_three, errors='coerce'.fillna(0)
 ```
 
 
