@@ -57,7 +57,7 @@ https://www.youtube.com/watch?v=85dtiMz9tSo
 
 - Precision: When a positive value is predicted, how often is the prediction correct? The proportion of positive identifications which were actually correct. Think about predictions as your base. When your false positive (falsely predicted positive) is more important, use precision. Ex: Focus on Precision for Spam Filter because spam goes to the inbox are more acceptable than non-spam is caught by the spam filter.
 - Recall: When the actual value is positive, how often is the prediction correct? The proportion of actual positives which were correctly classified. Think about truth as your base. When false negative (falsely predicted negative) is more important, use recall. Ex: Focus on Recall for Fraudulent Transaction Detector because normal transactions that are flagged as possible fraud are more acceptable than fraudulent transactions that are not detected. Another example is disease, you should increase recall.
-- F1 Score: A combination of precision and recall.
+- F1 Score: A combination of precision and recall. Consider this when you have an imbalanced dataset
 - Support: The number of samples each metric was calculated on.
 - Accuracy: The accuracy of the model in decimal form.
 ```
