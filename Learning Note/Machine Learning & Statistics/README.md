@@ -58,7 +58,7 @@ https://www.youtube.com/watch?v=85dtiMz9tSo
 ```
 false positive (precision) VS false negative (recall) in terms of disease
 falsely predicted disease VS falsely predicted no disease, which is more costly?
-recall, because if you falsely predicted someone who has disease as no disease, then this patient won't be treated on time. It's more costly.
+I should focus on Recall, because if you falsely predicted someone who has disease as no disease, then this patient won't be treated on time. It's more costly.
 ```
  
 - Precision: When your false positive (falsely predicted positive) is more important, use precision. When a positive value is predicted, how often is the prediction correct? The proportion of positive identifications which were actually correct. Think about predictions as your base. Ex: Focus on Precision for Spam Filter because spam goes to the inbox are more acceptable than non-spam is caught by the spam filter.
