@@ -53,7 +53,7 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
 - True Negative (TN): We correctly predicted that they don't have disease.
 - False Positive (FP): We incorrectly predicted that they do have disease. (Type 1 error)
 - False Negative (FN): We incorrectly predicted that they don't have disease. (Type 2 error)
-- Precision: The proportion of positive identifications which were actually correct. Think about predictions as your base.
+- Precision: When a positive value is predicted, how often is the prediction correct? The proportion of positive identifications which were actually correct. Think about predictions as your base.
 - Recall: The proportion of actual positives which were correctly classified. Think about truth as your base.
 - F1 Score: A combination of precision and recall.
 - Support: The number of samples each metric was calculated on.
