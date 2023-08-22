@@ -58,7 +58,7 @@ https://www.youtube.com/watch?v=85dtiMz9tSo
 ```
 - false positive (precision) VS false negative (recall) in terms of disease
 - falsely predicted disease VS falsely predicted no disease, which is more costly?
-- I should focus on Recall, because if you falsely predicted someone who has disease as no disease,
+- I should focus on having a high Recall, because if you falsely predicted someone who has disease as no disease,
 then this patient won't be treated on time. It's more costly.
 ```
  
