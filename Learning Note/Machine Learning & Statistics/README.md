@@ -49,7 +49,10 @@ Imagine you have 10 pictures and you want to predict which picture is dog, and w
 - Precision: out of 10 total pictures, your model predicted 7 pictures to be dog, but it turns out only 4 out of the 7 pictures are actually dog, this is true positive. Precision is 4/7.
 - Recall: Think about truth as your base. Out of 10 total pictures, 6 of the pictures are dog. Out of those 6 pictures, 4 of them are actually dog. So recall is 4/6.
 ---  
-
+- True Positive (TP): We correctly predicted that they do have disease.
+- True Negative (TN): We correctly predicted that they don't have disease.
+- False Positive (FP): We incorrectly predicted that they do have disease. (Type 1 error)
+- False Negative (FN): We incorrectly predicted that they don't have disease. (Type 2 error)
 - Precision: The proportion of positive identifications which were actually correct. Think about predictions as your base.
 - Recall: The proportion of actual positives which were correctly classified. Think about truth as your base.
 - F1 Score: A combination of precision and recall.
