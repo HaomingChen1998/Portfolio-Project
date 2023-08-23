@@ -112,7 +112,7 @@ sns.pairplot(df, hue='TARGET CLASS')
 <h1 align="center">Model Definition:</h1>
 
 1. **<small>KNN (K-Nearest Neighbors) for Classification**<small>
-- Classifies the new data or case based on a similarity measure. It is mostly used to classifies a data point based on how its neighbours are classified. It looks at what's around you, and take the label of the majority that's around you.
+- A supervised machine learning that classifies the new data or case based on a similarity measure. It is mostly used to classifies a data point based on how its neighbours are classified. It looks at what's around you, and take the label of the majority that's around you.
 - K stands for how many neighbors do we use to judge what the label is. Usually we use 3 or 5 for k.  
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/KNN.png)
 2. **<small>Naive Bayes for Classification**<small>
