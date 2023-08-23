@@ -7,6 +7,7 @@
 
 2. **<small>Unsupervised Learning has only x / input without y / output**<small>
 - Infer patterns from input data without references to labeled outcomes.
+- You do not use training and testing.
 - It has two sub categories, Clustering and Dimensionality Reduction
 - Clustering Model: K-Means, Hierarchical, Mean Shift, Density-based
 - Dimentionality Reduction (Feature Elimination/Extration): Principal Component Analysis(PCA) 
