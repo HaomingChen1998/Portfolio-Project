@@ -64,7 +64,7 @@ then this patient won't be treated on time. It's more costly.
 ```
  
 - Precision: When your false positive (falsely predicted positive) is more costly, increase precision. When a positive value is predicted, how often is the prediction correct? The proportion of positive identifications which were actually correct. Think about predictions as your base. Ex: Focus on Precision for Spam Filter because spam goes to the inbox are more acceptable than non-spam is caught by the spam filter.
-- Recall: When false negative (falsely predicted negative) is more costly, increase recall. When the actual value is positive, how often is the prediction correct? The proportion of actual positives which were correctly classified. Think about truth as your base. Ex: Focus on Recall for Fraudulent Transaction Detector because normal transactions that are flagged as possible fraud are more acceptable than fraudulent transactions that are not detected. Another example is disease, you should increase recall.
+- Recall (Sensitivity): When false negative (falsely predicted negative) is more costly, increase recall. When the actual value is positive, how often is the prediction correct? The proportion of actual positives which were correctly classified. Think about truth as your base. Ex: Focus on Recall for Fraudulent Transaction Detector because normal transactions that are flagged as possible fraud are more acceptable than fraudulent transactions that are not detected. Another example is disease, you should increase recall.
 - F1 Score: A combination of precision and recall. Consider this when you have an imbalanced dataset
 - Support: The number of samples each metric was calculated on.
 - Accuracy: The accuracy of the model in decimal form.
@@ -80,7 +80,12 @@ confusion_matrix(y_test, predictions)
 # Check Precision, Recall, and F1-score using classification report  
 from sklearn.metrics import classification_report  
 print(classification_report(y_test,predictions))
+
+# Adjust the threshold to increase/decrease recall/precision
+
 ```
+
+
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Log%20Evaluation.png)
 
 <h1 align="center">Save Created Model as a file</h1>
