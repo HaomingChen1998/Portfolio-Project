@@ -17,6 +17,7 @@ df.query('Coaster_Name == "Beach"')           # show data when coaster_name = be
 df['Gender'].value_counts()                     # count the number of occurrences of each unique value. Ex: Male 30, Female 29
 pd.DataFrame(np.random.rand(4,8))                # Create an example DataFrame to quickly show something
 pd.to_numeeric(df.col_three, errors='coerce'.fillna(0)
+movies[movies.genre.isin(['Action', 'Drama', 'Western'])] # Show rows where genre column is Action OR Drama OR Western. Add~ before movies.genre for is not.
 ```
 
 
