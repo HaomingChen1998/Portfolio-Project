@@ -82,7 +82,7 @@ from sklearn.metrics import classification_report
 print(classification_report(y_test,predictions))
 
 # Adjust the threshold to increase/decrease recall/precision
-
+https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Machine%20Learning%20%26%20Statistics/09_classification_metrics.ipynb
 ```
 
 
