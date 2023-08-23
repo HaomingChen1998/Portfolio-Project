@@ -80,11 +80,9 @@ confusion_matrix(y_test, predictions)
 # Check Precision, Recall, and F1-score using classification report  
 from sklearn.metrics import classification_report  
 print(classification_report(y_test,predictions))
-
-# Adjust the threshold to increase/decrease recall/precision
-https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Machine%20Learning%20%26%20Statistics/09_classification_metrics.ipynb
 ```
-
+- Adjust the threshold to increase/decrease recall/precision
+https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Machine%20Learning%20%26%20Statistics/09_classification_metrics.ipynb
 
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Log%20Evaluation.png)
 
