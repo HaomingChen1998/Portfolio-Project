@@ -27,7 +27,7 @@
 from sklearn import metrics  
 print('MAE:', metrics.mean_absolute_error(y_test, prediction))  
 print('MSE:', metrics.mean_squared_error(y_test, prediction))  
-print('MAE:', np.sqrt(metrics.mean_squared_error(y_test, prediction)))  
+print('RMSE:', np.sqrt(metrics.mean_squared_error(y_test, prediction)))  
 
 # R Squared  
 from sklearn.metrics import r2_score  
