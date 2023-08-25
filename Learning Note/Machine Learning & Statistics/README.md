@@ -84,6 +84,21 @@ print(classification_report(y_test,predictions))
 - Adjust the threshold to increase/decrease recall/precision
 https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Machine%20Learning%20%26%20Statistics/09_classification_metrics.ipynb
 
+```
+# Get the probabilities of the prediction
+Y_prob = lr.predict_proba(X_test)[:, 1]
+
+# Get the probabilities of the prediction
+Y_new_pred = []
+threshold = 0.8
+
+for i in range(0, len(Y_prob)):
+  if Y_prob[i] > threshold:
+    Y_new_pred.append(1)
+  else:
+    Y_new_pred.append(0)
+```
+
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Log%20Evaluation.png)
 
 <h1 align="center">Save Created Model as a file</h1>
