@@ -111,6 +111,7 @@ cr2 = classification_report(y_test, y_new_pred)
 ```
 
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Log%20Evaluation.png)
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Confusion%20Matrix.png)
 
 <h1 align="center">Save Created Model as a file</h1>
 
