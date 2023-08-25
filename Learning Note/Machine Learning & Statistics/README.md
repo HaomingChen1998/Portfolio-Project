@@ -67,7 +67,7 @@ then this patient won't be treated on time. It's more costly.
 - Recall (Sensitivity): When false negative (falsely predicted negative) is more costly, increase recall. When the actual value is positive, how often is the prediction correct? The proportion of actual positives which were correctly classified. Think about truth as your base. Ex: Focus on Recall for Fraudulent Transaction Detector because normal transactions that are flagged as possible fraud are more acceptable than fraudulent transactions that are not detected. Another example is disease, you should increase recall.
 - F1 Score: A combination of precision and recall. Consider this when you have an imbalanced dataset
 - Support: The number of samples each metric was calculated on.
-- Accuracy: The accuracy of the model in decimal form.
+- Accuracy: The accuracy of the model in decimal form, only good with balanced classes.
 ```
 # Accuracy Score
 from sklearn.metrics import accuracy_score  
