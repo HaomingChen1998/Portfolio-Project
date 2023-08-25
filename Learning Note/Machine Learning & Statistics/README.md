@@ -86,17 +86,21 @@ https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/M
 
 ```
 # Get the probabilities of the prediction
-Y_prob = lr.predict_proba(X_test)[:, 1]
+y_prob = lr.predict_proba(X_test)[:, 1]
 
 # Get the probabilities of the prediction
-Y_new_pred = []
+y_new_pred = []
 threshold = 0.8
 
-for i in range(0, len(Y_prob)):
-  if Y_prob[i] > threshold:
-    Y_new_pred.append(1)
+for i in range(0, len(y_prob)):
+  if y_prob[i] > threshold:
+    y_new_pred.append(1)
   else:
-    Y_new_pred.append(0)
+    y_new_pred.append(0)
+
+# Check the effect of probability threshold on predictions
+cm2 = confusion_matrix(y_test, y_new_pred)
+cr2 = classification_report(y_test, y_new_pred)
 ```
 
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Log%20Evaluation.png)
