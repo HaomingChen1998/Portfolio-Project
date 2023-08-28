@@ -92,9 +92,16 @@ print("f1_score",metrics.f1_score(y_test,y_pred_logreg))
 https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Machine%20Learning%20%26%20Statistics/09_classification_metrics.ipynb
 
 ```
+# Import and fit model, use the renamed model name for y_prob.
+from sklearn.model_selection import LogisticRegression
+lr = LogisticRegression()
+lr.fit(X_train, y_train)
+
 # Get the probabilities of the prediction
 y_prob = lr.predict_proba(X_test)[:, 1]
+```
 
+```
 # Get the probabilities of the prediction
 # Higher threshold increases precision, lower threshold increases recall.
 y_new_pred = []
@@ -109,6 +116,20 @@ for i in range(0, len(y_prob)):
 # Check the effect of probability threshold on predictions
 cr2 = classification_report(y_test, y_new_pred)
 print(cr2)
+```
+
+```
+# Get the AUC and plot the curve
+from sklearn.metrics import roc_curve, roc_auc_score
+fpr, tpr, threshold = roc_curve(y_test, y_prob)
+AUC = roc_auc_score(y_test, y_prob)
+
+import matplotlib.pyplot as plt
+plt.plot(fpr, tpr, linewidth=4)
+plt.xlabel("False Positive Rate")
+plt.ylabel("True Positive Rate")
+plt.title("ROC Curve")
+plt.grid()
 ```
 
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Log%20Evaluation.png)
