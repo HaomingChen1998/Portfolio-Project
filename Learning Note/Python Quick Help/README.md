@@ -7,7 +7,7 @@
 
 # Helpful Syntax
 ```
-pd.set_option('max_columns', 200)
+pd.options.display.max_columns = 200
 plt.style.use('ggplot')
 df.drop(['column_name'], axis=1)
 df.rename(columns={'old_name':'new_name', 'old_name2':'new_name2'})
