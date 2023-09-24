@@ -21,7 +21,7 @@ pd.to_numeric(df.col_three, errors='coerce'.fillna(0)
 movies[movies.genre.isin(['Action', 'Drama', 'Western'])] # Show rows where genre column is Action OR Drama OR Western. Add~ before movies.genre for is not.
 pd.cut(titanic.Age, bins=[0, 18, 25, 99], labels=['child', 'young adult', 'adult']) Convert continuous data into categorical data, age 0-18 for child, 18-25 for young adult, etc.
 df.columns = df.columns.str.replace(' ', '_').str.lower()
-iloc[] for index/numbers inside [], but when you refer to a column name inside [], you should use loc. Ex:df1.loc[:3, 'column_name'].
+iloc[] only accept numbers inside [], but when you refer to a column name inside [], you should use loc. Ex:df1.loc[:3, 'column_name'].
 
 ```
 
