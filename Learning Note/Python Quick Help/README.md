@@ -20,6 +20,7 @@ pd.DataFrame(np.random.rand(4,8))                # Create an example DataFrame t
 pd.to_numeric(df.col_three, errors='coerce'.fillna(0)
 movies[movies.genre.isin(['Action', 'Drama', 'Western'])] # Show rows where genre column is Action OR Drama OR Western. Add~ before movies.genre for is not.
 pd.cut(titanic.Age, bins=[0, 18, 25, 99], labels=['child', 'young adult', 'adult']) Convert continuous data into categorical data, age 0-18 for child, 18-25 for young adult, etc.
+df.columns = df.columns.str.replace(' ', '_').str.lower()
 
 ```
 
