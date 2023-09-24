@@ -17,7 +17,7 @@ df['Timestamp'] = df['Timestamp'].astype('datetime64[ns]')
 df.query('Coaster_Name == "Beach"')           # show data when coaster_name = beach
 df['Gender'].value_counts()                     # count the number of occurrences of each unique value. Ex: Male 30, Female 29
 pd.DataFrame(np.random.rand(4,8))                # Create an example DataFrame to quickly show something
-pd.to_numeeric(df.col_three, errors='coerce'.fillna(0)
+pd.to_numeric(df.col_three, errors='coerce'.fillna(0)
 movies[movies.genre.isin(['Action', 'Drama', 'Western'])] # Show rows where genre column is Action OR Drama OR Western. Add~ before movies.genre for is not.
 pd.cut(titanic.Age, bins=[0, 18, 25, 99], labels=['child', 'young adult', 'adult']) Convert continuous data into categorical data, age 0-18 for child, 18-25 for young adult, etc.
 
