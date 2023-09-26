@@ -14,6 +14,7 @@ df.rename(columns={'old_name':'new_name', 'old_name2':'new_name2'})
 df.columns = df.columns.str.replace(' ', '_')          # Replace space with underscore.
 df.name.str.split(' ', expand=True)     # Split the names under the name column into different columns when there is a space.
 df.groupby('from_user').size().to_frame('total_emails').reset_index() # Group by from users, and count how many times the same value repeated.  to_frame gives this count column a name. reset_index treats index as column, in this case, it shows from_user column.
+df['rank'] = df.total_emails.rank(method='first', ascending=False) # method='first' is like row_number, dense is like dense_rank
 df['Timestamp'] = df['Timestamp'].astype('datetime64[ns]')
 df.query('Coaster_Name == "Beach"')           # show data when coaster_name = beach
 df.query('pricecategory.isin(["Low", "High"])')
