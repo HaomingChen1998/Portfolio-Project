@@ -16,6 +16,7 @@ df.name.str.split(' ', expand=True)     # Split the names under the name column 
 df['Timestamp'] = df['Timestamp'].astype('datetime64[ns]')
 df.query('Coaster_Name == "Beach"')           # show data when coaster_name = beach
 df.query('pricecategory.isin(["Low", "High"])')
+dma13.query('dma.str.contains("atlanta", case=False)') # Similar to SQL ilike, case=False: case-insensitive, you can do without.
 df['Gender'].value_counts()                     # count the number of occurrences of each unique value. Ex: Male 30, Female 29
 pd.DataFrame(np.random.rand(4,8))                # Create an example DataFrame to quickly show something
 pd.to_numeric(df.col_three, errors='coerce'.fillna(0)
