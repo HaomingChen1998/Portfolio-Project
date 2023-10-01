@@ -7,6 +7,7 @@
 
 # Helpful Syntax
 ```
+df = pd.read_excel(https://raw.githubusercontent.com/HaomingChen1998/excel.xlsx) # Read csv from github: change github.com to raw.githubusercontent.com
 pd.options.display.max_columns = 200
 plt.style.use('ggplot')
 df.drop(['column_name'], axis=1)
