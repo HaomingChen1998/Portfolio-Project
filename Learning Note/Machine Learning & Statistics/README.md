@@ -188,3 +188,8 @@ Different Dimensions:
 - PCA works by identifying the directions in which the data varies the most, known as the principal components. It then projects the data onto these principal components, creating a new set of features that capture most of the variation in the original data. The new features are linear combinations of the original features, so they are uncorrelated with each other.
 - When you have a lot of features and not that many rows of data, it can make sense to run PCA. I wouldn't run PCA by default because I'd rather see the contribution of each feature to the response variable before deciding if it makes sense to reduce dimensions, but if the features seem redundant or have high multicollinearity, then it may make sense to use PCA to reduce the number of dimensions. The results of PCA may also be hard to interpret if the features being grouped together are not particularly intuitive.
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/PCA.gif)
+
+<h1 align="center">A/B Testing:</h1>
+- Baseline Conversion Rate %: Current Conversion Rate
+- Minimum Detectable Effect %: This is the expected change, has to be reasonable. The higher the value of minimum detectable effect, the less the traffic you will need.
+- Statistical Significance: measure the likelihood that the observed value is true and not by chance. 95% level means we are going to observe this result 95% of the time.
