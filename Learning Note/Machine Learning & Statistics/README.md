@@ -192,8 +192,10 @@ Different Dimensions:
 <h1 align="center">A/B Testing:</h1>
 
 **<small>Steps**<small>
+1. Randomly break the experiment into 2 groups, the control group, and treatment/test group.
+2. At least run the A/B testing for 2 weeks to ensure it captures a full purchase cycle.
 
 **<small>Definition**<small>
-- Baseline Conversion Rate %: Current Conversion Rate
-- Minimum Detectable Effect %: This is the expected change, has to be reasonable. The higher the value of minimum detectable effect, the less the traffic you will need.
-- Statistical Significance: measure the likelihood that the observed value is true and not by chance. 95% level means we are going to observe this result 95% of the time.
+1. Baseline Conversion Rate %: Current Conversion Rate
+2. Minimum Detectable Effect %: This is the expected change, has to be reasonable. The higher the value of minimum detectable effect, the less the traffic you will need.
+3. Statistical Significance: measure the likelihood that the observed value is true and not by chance. 95% level means we are going to observe this result 95% of the time.
