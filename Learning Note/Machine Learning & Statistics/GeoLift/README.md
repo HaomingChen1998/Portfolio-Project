@@ -9,4 +9,5 @@
 - https://www.youtube.com/watch?v=EGqrtpEXxaU
 2. Counterfactual: What would it happen without? Ex: what would have happen to gas consumption if NY didn't introduce carbon tax?
 3. Causal Effect: The difference between gasoline consumption with tax and gasoline consumption without tax after treatment.
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/SCM.png)
 
