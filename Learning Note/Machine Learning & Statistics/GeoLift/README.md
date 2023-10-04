@@ -12,9 +12,9 @@
 3. Causal Effect: The difference between gasoline consumption with tax and gasoline consumption without tax after treatment.
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/SCM.png)
 4. Power Analysis: Statistical analysis that you should run before executing a test to set it up for success. Through Power Analysis, you can find the following:
-  - The optimal number of test locations.
-  - Best test duration.
-  - Select the ideal test and control markets.
-  - Get a good estimate of the budget needed to run the test.
-  - Determine which is the Minimum Detectable Effect to obtain significant results.
-  - Align expectations.
+    - The optimal number of test locations.
+    - Best test duration.
+    - Select the ideal test and control markets.
+    - Get a good estimate of the budget needed to run the test.
+    - Determine which is the Minimum Detectable Effect to obtain significant results.
+    - Align expectations.
