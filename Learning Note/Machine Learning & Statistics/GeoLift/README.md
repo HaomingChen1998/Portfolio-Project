@@ -5,7 +5,7 @@
 
 **<small>Definition**<small>
 - Assuming you want to find out 
-1. Synthetic Control Methods (SCM): The average of similar states that fit the target state (NY) very well before the treatment (carbon tax)
+1. Synthetic Control Methods (SCM): It helps you to understand if something causes something esle. The average of similar states that fit the target state (NY) very well before the treatment (carbon tax)
 2. Counterfactual: What would it happen without? Ex: what would have happen to gas consumption if NY didn't introduce carbon tax?
 3. Causal Effect: The difference between gasoline consumption with tax and gasoline consumption without tax.
 
