@@ -1,5 +1,6 @@
 <h1 align="center">Geolift:</h1>
-
+  - https://facebookincubator.github.io/GeoLift/docs/GettingStarted/Walkthrough
+  
 **<small>Steps**<small>
 1. 
 
@@ -18,3 +19,4 @@
     - Get a good estimate of the budget needed to run the test.
     - Determine which is the Minimum Detectable Effect to obtain significant results.
     - Align expectations.
+5. GeoLiftMarketSelection() : a function that find which are the best combinations of test and control locations for the experiment.
