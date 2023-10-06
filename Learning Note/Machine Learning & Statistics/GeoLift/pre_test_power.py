@@ -1,4 +1,3 @@
-----------------------------------Start-----------------------------
 GeoLiftMarketSelection <- function(data,
                                    treatment_periods,
                                    N = c(),
@@ -147,5 +146,3 @@ GeoLiftMarketSelection <- function(data,
       BestMarkets,
       run_stochastic_process = run_stochastic_process
     )
-
- ------------------------------------END------------------------------------------------
