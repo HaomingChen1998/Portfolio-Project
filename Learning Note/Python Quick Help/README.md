@@ -37,8 +37,8 @@ iloc[] only accept numbers inside [], but when you refer to a column name inside
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 pip install -r requirements.txt # Installs all the packages from requirements.txt
 pip install pipreqs --force# Genereate requirements.txt file with only a few selected packages. You need to import the packages you want to include first.
-python -m venv .venv # Creating new environment: .venv can be change to the name you want the new virtual environment to be.
-C:\> <venv>\Scripts/activate.bat # to activate this new virtual environment.
+python -m venv myenv # Creating new environment: .venv can be change to the name you want the new virtual environment to be.
+myenv\Scripts\activate # to activate this new virtual environment.
 
 ```
 
