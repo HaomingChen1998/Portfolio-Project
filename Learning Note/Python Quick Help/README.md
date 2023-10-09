@@ -31,6 +31,12 @@ iloc[] only accept numbers inside [], but when you refer to a column name inside
 
 ```
 
+# Python Environment VScode Syntax
+
+```
+- pip freeze > requirements.txt
+- pip install -r requirements.txt # Installs all the packages from requirement.txt
+```
 
 # Visualization with Pandas
 There are several plot types built into pandas; most of them are statistical by nature:  
