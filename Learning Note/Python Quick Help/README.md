@@ -40,7 +40,8 @@ C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv geo
 pip install -r requirements.txt # Installs all the packages from requirements.txt
 pip install pipreqs --force# Genereate requirements.txt file with only a few selected packages. You need to import the packages you want to include first.
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
-
+# If you downloaded package that has "setup.py" in root folder, you can install it by running
+python setup.py install
 ```
 
 ```
