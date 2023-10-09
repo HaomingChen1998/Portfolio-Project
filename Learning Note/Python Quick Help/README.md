@@ -35,11 +35,11 @@ iloc[] only accept numbers inside [], but when you refer to a column name inside
 
 ```
 # Select location to store your virtual environment: File -> Folder
-pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
+C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv geolift # path to the python version you want to use, make sure this python version is downloaded first from https://www.python.org/downloads/. Geolift is the name of that virtual environment you are about to create.
+# Run the activate.bat file to activate.
 pip install -r requirements.txt # Installs all the packages from requirements.txt
 pip install pipreqs --force# Genereate requirements.txt file with only a few selected packages. You need to import the packages you want to include first.
-python -m venv myenv # Creating new environment: .venv can be change to the name you want the new virtual environment to be.
-# Run the activate.bat file to activate.
+pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 
 ```
 
