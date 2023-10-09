@@ -42,6 +42,8 @@ pip install pipreqs --force# Genereate requirements.txt file with only a few sel
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 
 ```
+
+```
 # Check Python and package version
 import pandas as pd
 import numpy as np
@@ -53,8 +55,6 @@ import sys
 print(f'pandas version: {pd.__version__}')
 print(f'numpy version: {np.__version__}')
 print(f'Python version: {sys.version}')
-```
-
 ```
 
 # Visualization with Pandas
