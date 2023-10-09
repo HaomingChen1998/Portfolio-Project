@@ -42,6 +42,20 @@ pip install pipreqs --force# Genereate requirements.txt file with only a few sel
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 
 ```
+# Check Python and package version
+import pandas as pd
+import numpy as np
+import sys
+# Python 3.12.0
+# NumPy 1.26.0
+# Pandas 2.1.1
+
+print(f'pandas version: {pd.__version__}')
+print(f'numpy version: {np.__version__}')
+print(f'Python version: {sys.version}')
+```
+
+```
 
 # Visualization with Pandas
 There are several plot types built into pandas; most of them are statistical by nature:  
