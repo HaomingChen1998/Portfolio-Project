@@ -34,8 +34,10 @@ iloc[] only accept numbers inside [], but when you refer to a column name inside
 # Python Environment VScode Syntax
 
 ```
-pip freeze > requirements.txt # Generate requirements.txt file
+pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 pip install -r requirements.txt # Installs all the packages from requirements.txt
+pip install pipreqs --force# Genereate requirements.txt file with only a few selected packages. You need to import the packages you want to include first.
+
 ```
 
 # Visualization with Pandas
