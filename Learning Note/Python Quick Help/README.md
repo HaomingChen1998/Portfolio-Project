@@ -34,8 +34,8 @@ iloc[] only accept numbers inside [], but when you refer to a column name inside
 # Python Environment VScode Syntax
 
 ```
-- pip freeze > requirements.txt
-- pip install -r requirements.txt # Installs all the packages from requirement.txt
+pip freeze > requirements.txt # Generate requirements.txt file
+pip install -r requirements.txt # Installs all the packages from requirements.txt
 ```
 
 # Visualization with Pandas
