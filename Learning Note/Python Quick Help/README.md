@@ -49,10 +49,10 @@ python setup.py install
 import pandas as pd
 import numpy as np
 import sys
-# Python 3.12.0
-# NumPy 1.26.0
-# Pandas 2.1.1
 
+# Pandas 2.1.1
+# NumPy 1.26.0
+# Python 3.12.0
 print(f'pandas version: {pd.__version__}')
 print(f'numpy version: {np.__version__}')
 print(f'Python version: {sys.version}')
