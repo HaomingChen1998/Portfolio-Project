@@ -58,6 +58,13 @@ print(f'numpy version: {np.__version__}')
 print(f'Python version: {sys.version}')
 ```
 
+# Python Github Package Installation
+
+```
+pip install "git+https://github.com/google/matched_markets.git" # git+the link you get from the github main page -> green "Code" button -> copy the https link.
+python setup.py install # Download the setup.py file and place it to the environment folder.
+```
+
 # Visualization with Pandas
 There are several plot types built into pandas; most of them are statistical by nature:  
 
