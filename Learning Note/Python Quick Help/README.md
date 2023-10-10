@@ -58,6 +58,11 @@ print(f'numpy version: {np.__version__}')
 print(f'Python version: {sys.version}')
 ```
 
+```
+# Troubleshoot:
+python -m pip install --upgrade --force-reinstall pip # Fatal error in launcher: Unable to create process
+```
+
 # Python Github Package Installation
 
 ```
