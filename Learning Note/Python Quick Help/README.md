@@ -61,6 +61,13 @@ print(f'Python version: {sys.version}')
 ```
 # Troubleshoot:
 python -m pip install --upgrade --force-reinstall pip # Fatal error in launcher: Unable to create process
+
+If unable to push:
+1. commit
+2. then push
+3. If not successful, then pull.
+4. Maybe conflict, If so, click on each file with conflict symbol, and then click on Conflict Merge Panel. Check the view's name to see if the one on the left or right is mine. Click on accept or ignore.
+5. Then push again.
 ```
 
 # Python Github Package Installation
