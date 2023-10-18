@@ -28,6 +28,7 @@ movies[movies.genre.isin(['Action', 'Drama', 'Western'])] # Show rows where genr
 pd.cut(titanic.Age, bins=[0, 18, 25, 99], labels=['child', 'young adult', 'adult']) Convert continuous data into categorical data, age 0-18 for child, 18-25 for young adult, etc.
 df.columns = df.columns.str.replace(' ', '_').str.lower()
 iloc[] only accept numbers inside [], but when you refer to a column name inside [], you should use loc. Ex:df1.loc[:3, 'column_name'].
+result_name.to_csv(r'C:\Users\codchen1\Desktop\file_name.csv', index=False)
 
 ```
 
