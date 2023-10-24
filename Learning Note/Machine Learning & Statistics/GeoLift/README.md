@@ -1,5 +1,9 @@
 <h1 align="center">Geolift:</h1>
+
+GeoLift uses columns like location, date, KPI to measure lift from marketing campaigns at a geographical level between test and control markets.  
+
   - https://facebookincubator.github.io/GeoLift/docs/GettingStarted/Walkthrough
+
   
 **<small>Steps**<small>
 1. 
