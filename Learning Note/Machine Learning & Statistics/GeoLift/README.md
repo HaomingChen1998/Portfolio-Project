@@ -20,3 +20,14 @@
     - Determine which is the Minimum Detectable Effect to obtain significant results.
     - Align expectations.
 5. GeoLiftMarketSelection() : a function that find which are the best combinations of test and control locations for the experiment.
+My understanding of the difference between correlation and dtw:
+
+Correlation: You listen to two songs are the same, but one song plays 5 seconds later. When you listen to them, they sound different.  
+
+DTW: You listen to two songs are the same, and they play at the same time. When you listen to them, they sound the same.  
+
+In the context of a retail industry, let's say a company runs an ad campaign about their tissue papers. It's relatively cheap, and it's for everyday use, so you can see the result faster. In this case, understanding the effective with a delay might not be important.  
+
+In the context of a healthcare marketing campaign, let's say Pfizer runs an ad campaign about their new medicine, understanding the effectiveness with a delay might be important because healthcare decisions often take longer to decide. Ex: talking to their doctors first since no one medication works for all, consult insurance company about the cost, consult with family members if the cost is significant. If we do not use DTW in this case, we might conclude that the ad campaign wasn't effective at a city, but in fact, it is effective, but just with a delay.   
+   
+Dtw can also be used for anomaly detection (e.g. overlap time series between two disjoint time periods to understand if the shape has changed significantly, or to examine outliers)
