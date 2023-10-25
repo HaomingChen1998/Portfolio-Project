@@ -69,6 +69,11 @@ If unable to push:
 3. If not successful, then pull.
 4. Maybe conflict, If so, click on each file with conflict symbol, and then click on Conflict Merge Panel. Check the view's name to see if the one on the left or right is mine. Click on accept or ignore.
 5. Then push again.
+
+If unable to discard all my changes
+1. Need to save all first.
+2. Menu button next to the source control
+3. Changes -> Discard all changes
 ```
 
 # Python Github Package Installation
