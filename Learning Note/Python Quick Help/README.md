@@ -74,6 +74,11 @@ If unable to discard all my changes
 1. Need to save all first.
 2. Menu button next to the source control
 3. Changes -> Discard all changes
+
+OR
+1. Stash the file that I wanna keep. (from the menu button next to the source control. Save in a safe place, and we gonna bring it back later)
+2. Discard the change for the remaining unwanted files
+3. Pop stash (bring back the file that I saved before back)
 ```
 
 # Python Github Package Installation
