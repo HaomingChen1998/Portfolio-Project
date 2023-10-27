@@ -40,6 +40,8 @@ result_name.to_csv(r'C:\Users\codchen1\Desktop\file_name.csv', index=False)
 C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv geolift # path to the python version, Geolift is the name of that virtual environment.
 # Run the activate.bat file to activate.
 pip install -r requirements.txt # Installs all the packages from requirements.txt
+# If pip install didn't install in virtual environment folder, use the full path to the Python interpreter in your virtual environment to install.
+C:\Users\Cody\Desktop\Default_Python\Default_Python\Scripts\python.exe -m pip install -r requirements.txt
 pip install pipreqs --force# Genereate requirements.txt file with only a few selected packages. You need to import the packages you want to include first.
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 # If you downloaded package that has "setup.py" in root folder, you can install it by running
