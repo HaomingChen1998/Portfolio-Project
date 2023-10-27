@@ -36,7 +36,8 @@ result_name.to_csv(r'C:\Users\codchen1\Desktop\file_name.csv', index=False)
 
 ```
 # Select location to store your virtual environment: File -> Folder
-C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv geolift # path to the python version you want to use, make sure this python version is downloaded first from https://www.python.org/downloads/. Geolift is the name of that virtual environment you are about to create.
+# Make sure this python version is downloaded first from https://www.python.org/downloads/.
+C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv geolift # path to the python version, Geolift is the name of that virtual environment.
 # Run the activate.bat file to activate.
 pip install -r requirements.txt # Installs all the packages from requirements.txt
 pip install pipreqs --force# Genereate requirements.txt file with only a few selected packages. You need to import the packages you want to include first.
