@@ -133,10 +133,12 @@ sns.heatmap(df_corr, annot=True)
 plt.show()
 ```
 
-# Prevent Computer from Sleeping
+# Prevent Computer from Sleeping  
+https://github.com/singhsidhukuldeep/stay-awake
 
 ```
 pip install stay-awake
 python -m stay-awake 5
 ```
 Then put awake.bat file in the windows startup folder by doing Win+R, shell:startup
+
