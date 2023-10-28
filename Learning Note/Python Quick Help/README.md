@@ -38,8 +38,6 @@ result_name.to_csv(r'C:\Users\codchen1\Desktop\file_name.csv', index=False)
 # Select location to store your virtual environment: File -> Folder
 # Make sure this python version is downloaded first from https://www.python.org/downloads/.
 C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv geolift # path to the python version, Geolift is the name of that virtual environment.
-# Activate this virtual environment, assuming virtual environment folder is located in desktop.
-python -m venv C:\Users\Cody\Desktop\Default_Python\ # link path to the virtual environment of my choice
 cd C:\Users\Cody\Desktop\Default_Python\Scripts\ # now activate this environment
 .\activate.bat
 where.exe python # check virtual environment being used right now, the top python path has priority.
