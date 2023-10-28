@@ -38,7 +38,7 @@ result_name.to_csv(r'C:\Users\codchen1\Desktop\file_name.csv', index=False)
 # Create a folder in desktop to store your virtual environment
 # Select location to store your virtual environment from VSCODE: File -> Folder
 # Make sure this python version is downloaded first from https://www.python.org/downloads/.
-C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv . # path to the python version, Geolift is the name of that virtual environment.
+C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv . # Create a virtual environment
 cd C:\Users\Cody\Desktop\Default_Python\Scripts\ # now activate this environment
 .\activate.bat
 where.exe python # check virtual environment being used right now, the top python path has priority.
