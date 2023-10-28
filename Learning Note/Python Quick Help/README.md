@@ -42,6 +42,7 @@ C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv . #
 cd C:\Users\Cody\Desktop\Default_Python\Scripts\ # now activate this environment
 .\activate.bat
 where.exe python # check virtual environment being used right now, the top python path has priority.
+.\pip.exe install -r ../requirements.txt
 pip install -r requirements.txt # Installs all the packages from requirements.txt
 # If pip install didn't install in virtual environment folder, use the full path to the Python interpreter in your virtual environment to install.
 # requirements.txt file should be located at the main folder.
