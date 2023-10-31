@@ -60,6 +60,20 @@ OR appending to the env variable PYTHONPATH as follow:
                 "PYTHONPATH":"${PYTHONPATH}:/home/maxepstein/myproject/"
             }
 
+{
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": { "PYTHONPATH": "${workspaceRoot}"}
+        }
+    ]
+}
+
 
 if __name__ == "__main__"
 When you import a function, it will run the function at the same time. The above function prevents this.
