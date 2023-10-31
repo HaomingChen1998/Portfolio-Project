@@ -55,6 +55,10 @@ python setup.py install
 # ModuleNotFoundError
 add the following env entry to the launch.json configuration:
 "env": { "PYTHONPATH": "${workspaceRoot}"}
+OR
+            "env": {
+                "PYTHONPATH":"${PYTHONPATH}:/home/maxepstein/myproject/"
+            }
 ```
 
 ```
