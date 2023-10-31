@@ -51,6 +51,10 @@ pip install pipreqs --force# Genereate requirements.txt file with only a few sel
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 # If you downloaded package that has "setup.py" in root folder, you can install it by running
 python setup.py install
+
+# ModuleNotFoundError
+add the following env entry to the launch.json configuration:
+"env": { "PYTHONPATH": "${workspaceRoot}"}
 ```
 
 ```
