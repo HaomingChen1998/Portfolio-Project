@@ -59,6 +59,11 @@ OR appending to the env variable PYTHONPATH as follow:
             "env": {
                 "PYTHONPATH":"${PYTHONPATH}:/home/maxepstein/myproject/"
             }
+
+
+if __name__ == "__main__"
+When you import a function, it will run the function at the same time. The above function prevents this.
+https://www.youtube.com/watch?v=o4XveLyI6YU
 ```
 
 ```
