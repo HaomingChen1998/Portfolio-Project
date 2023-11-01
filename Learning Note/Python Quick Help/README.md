@@ -52,6 +52,10 @@ pip freeze > requirements.txt # Generate requirements.txt file that includes all
 # If you downloaded package that has "setup.py" in root folder, you can install it by running
 python setup.py install
 
+if __name__ == "__main__"
+When you import a function, it will run the function at the same time. The above function prevents this.
+https://www.youtube.com/watch?v=o4XveLyI6YU
+
 # ModuleNotFoundError
 add the following env entry to the launch.json configuration:
 {
@@ -72,12 +76,9 @@ add the following env entry to the launch.json configuration:
 Create an __init__.py file in the same folder as the module you can't find.
 Then type in   from .augsynth import *
 The dot (.) before augsynth signifies a relative import. This means Python will look for the augsynth module in the same directory as the __init__.py file.
-![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Module_Error.png)
-
-if __name__ == "__main__"
-When you import a function, it will run the function at the same time. The above function prevents this.
-https://www.youtube.com/watch?v=o4XveLyI6YU
 ```
+ModuleNoteFoundError solution 2
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Module_Error.png)
 
 ```
 # Check Python and package version
