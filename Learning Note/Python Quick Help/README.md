@@ -54,12 +54,6 @@ python setup.py install
 
 # ModuleNotFoundError
 add the following env entry to the launch.json configuration:
-"env": { "PYTHONPATH": "${workspaceRoot}"}
-OR appending to the env variable PYTHONPATH as follow:
-            "env": {
-                "PYTHONPATH":"${PYTHONPATH}:/home/maxepstein/myproject/"
-            }
-
 {
     "configurations": [
         {
@@ -73,6 +67,7 @@ OR appending to the env variable PYTHONPATH as follow:
         }
     ]
 }
+
 # ModuleNoteFoundError solution 2
 Create an __init__.py file in the same folder as the module you can't find.
 Then type in   from .augsynth import *
