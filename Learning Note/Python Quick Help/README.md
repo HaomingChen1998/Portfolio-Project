@@ -72,6 +72,7 @@ add the following env entry to the launch.json configuration:
 Create an __init__.py file in the same folder as the module you can't find.
 Then type in   from .augsynth import *
 The dot (.) before augsynth signifies a relative import. This means Python will look for the augsynth module in the same directory as the __init__.py file.
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Module_Error.png)
 
 if __name__ == "__main__"
 When you import a function, it will run the function at the same time. The above function prevents this.
