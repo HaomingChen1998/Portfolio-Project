@@ -123,6 +123,41 @@ pip install "git+https://github.com/google/matched_markets.git" # git+the link y
 python setup.py install # Download the setup.py file and place it to the environment folder.
 ```
 
+# Python Debug
+
+```
+Create a test.py file, and set it up like this:
+# Import all the functions you have created from another file.
+from geolift.auxiliary import fn_treatment, CorrelationCoefficient, limit_test_markets, MarketCorrelations
+# Read dataset
+data = pd.read_csv("tests/GeoDataReadProcessedData.csv")
+# Set up testing:
+def test_GeoLiftMarketSelection():
+    #test this out having run_simulations return a dict with random generated numeric values
+    returned_dict = GeoLiftMarketSelection(data = pd.read_csv("data/GeoDataReadProcessedData.csv"),
+                                              treatment_periods = [10,15],
+                                              N = [2,3,4,5],
+                                              X = [],
+                                              Y_id = "Y",
+                                              location_id = "location",
+                                              time_id = "time",
+                                              effect_size = [0, 0.5, 0.05],
+                                              lookback_window = 1,
+                                              include_markets = ["chicago"],
+                                              exclude_markets = ["honolulu"],
+                                              holdout = [0.5, 1],
+                                              cpic = 7.50,
+                                              budget = 100000,
+                                              alpha = 0.1,
+                                              Correlations = True,
+                                              fixed_effects = True,
+                                              side_of_test = "two_sided")
+    return returned_dict
+
+if __name__=="__main__": # When a function gets imported, it would also be executed. This code prevents them from executing unless you run them manually.
+    test_GeoLiftMarketSelection()
+```
+
 # Visualization with Pandas
 There are several plot types built into pandas; most of them are statistical by nature:  
 
