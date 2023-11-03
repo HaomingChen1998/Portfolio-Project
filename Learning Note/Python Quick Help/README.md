@@ -127,10 +127,13 @@ python setup.py install # Download the setup.py file and place it to the environ
 
 ```
 Create a test.py file, and set it up like this:
+
 # Import all the functions you have created from another file.
 from geolift.auxiliary import fn_treatment, CorrelationCoefficient, limit_test_markets, MarketCorrelations
+
 # Read dataset
 data = pd.read_csv("tests/GeoDataReadProcessedData.csv")
+
 # Set up testing:
 def test_GeoLiftMarketSelection():
     #test this out having run_simulations return a dict with random generated numeric values
