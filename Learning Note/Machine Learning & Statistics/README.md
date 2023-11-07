@@ -206,7 +206,7 @@ Different Dimensions:
 
 <h1 align="center">Casual Inference:</h1>
 
-1. Confounders: A variable that is not included in an experiment, yet affects the relationship between the two variables in an experiment. This type of variable can confound the results of an experiment and lead to unreliable findings.
+1. Confounders: A variable that is not included in an experiment, yet affects the relationship between the two variables in an experiment. This type of variable can mix the results of an experiment and lead to unreliable findings.
 - Ex: You collect data on sunburns and ice cream consumption. You find that higher ice cream consumption is associated with a higher probability of sunburn. Does that mean ice cream consumption causes sunburn? Here, the confounding variable is temperature: high temperatures cause people to both eat more ice cream and spend more time outdoors under the sun, resulting in more sunburns.
 2. Selection Bias:
 - Ex: I take some users who have a disease, and give them rx. This is my treatment group. I then take some other user who have a disease, and not give them rx. After some time, there are more people in the treatment group that recovered than control group. You can't conclude that the rx is effective, because what if people in treatment group are mostly teenagers, and people in control group are mostly seniors? The age is the confounder in this case.
