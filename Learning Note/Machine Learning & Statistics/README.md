@@ -199,10 +199,13 @@ Different Dimensions:
 1. Baseline Conversion Rate %: Current Conversion Rate
 2. Minimum Detectable Effect %: This is the expected change, has to be reasonable. The higher the value of minimum detectable effect, the less the traffic you will need.
 3. Statistical Significance: measure the likelihood that the observed value is true and not by chance. 95% level means we are going to observe this result 95% of the time.
-4. 
+
 **<small>Problems with AB Testing**<small>
 1. Setting up the experiment might be impossible.
 2. Experiment takes too long, it makes more sense to use already exist data, this is call **<small>Casual Inference**<small>.
 
 <h1 align="center">Casual Inference:</h1>
-1. Confounders: factors that influece the result
+1. Confounders: factors that influece the result.
+- Ex: I take some users who have a disease, and give them rx. This is my treatment group. I then take some other user who have a disease, and not give them rx. After some time, there are more people in the treatment group that recovered than control group. You can't conclude that the rx is effective, because what if people in treatment group are mostly teenagers, and people in control group are mostly seniors? The age is the confounder in this case.
+2. Selection Bias:
+3. 
