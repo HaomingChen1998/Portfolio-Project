@@ -202,7 +202,7 @@ Different Dimensions:
 4. 
 **<small>Problems with AB Testing**<small>
 1. Setting up the experiment might be impossible.
-2. Experiment takes too long, it makes more sense to use already exist data, this is call Casual Inference.
+2. Experiment takes too long, it makes more sense to use already exist data, this is call **<small>Casual Inference**<small>.
 
 <h1 align="center">Casual Inference:</h1>
 1. Confounders: factors that influece the result
