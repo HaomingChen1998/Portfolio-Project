@@ -205,6 +205,7 @@ Different Dimensions:
 2. Experiment takes too long, it makes more sense to use already exist data, this is call **<small>Casual Inference**<small>.
 
 <h1 align="center">Casual Inference:</h1>
+
 1. Confounders: factors that influece the result.
 - Ex: I take some users who have a disease, and give them rx. This is my treatment group. I then take some other user who have a disease, and not give them rx. After some time, there are more people in the treatment group that recovered than control group. You can't conclude that the rx is effective, because what if people in treatment group are mostly teenagers, and people in control group are mostly seniors? The age is the confounder in this case.
 2. Selection Bias:
