@@ -208,6 +208,6 @@ Different Dimensions:
 
 1. Confounders: A variable that is not included in an experiment, yet affects the relationship between both the independent and dependent variable in an experiment. This type of variable can mix the results of an experiment and lead to unreliable findings.
 - Ex: Suppose a healthcare marketing campaign is promoting a new lung health supplement and uses data showing that individuals who consume the supplement have better lung health. However, if the majority of these individuals are non-smokers, smoking becomes a confounder. The improved lung health could be due to the absence of smoking rather than the supplement.
-2. Selection Bias: A bias introduced to the experiment, so the sample is not representative of the whole population.
+2. Counterfactual: What would it happen without? Ex: what would have happen to lung health if Pfizer didn't introduce their supplement?
+3. Selection Bias: A bias introduced to the experiment, so the sample is not representative of the whole population.
 - Ex: Suppose a healthcare marketing campaign is promoting a new fitness device and collects data on its effectiveness only from fitness enthusiasts or professional athletes. This would introduce a sampling bias, as these individuals are not representative of the general population.
-3. 
