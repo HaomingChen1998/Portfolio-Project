@@ -5,7 +5,8 @@
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Excel%205.png)
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Excel%206.png)
 
-# Conditional Formatting
-```
-Home -> Conditional Formatting -> 
-```
+# Filter Data:
+1. Ctrl+T
+2. Insert Slicer
+3. Choose what you want to filter by
+4. Go to Slicer Tab on the top right corner.
