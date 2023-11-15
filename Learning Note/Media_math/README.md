@@ -2,3 +2,6 @@
 
 **<small>Cost Per Impression**<small>  
 CPM = Cost / Impression
+
+**<small>Cost Per Impression**<small>  
+CPM = Cost / Impression
