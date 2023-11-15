@@ -1,2 +1,3 @@
 # Media Math
-CPM (cost per impression) = Cost / Impression
+# cost per impression
+CPM = Cost / Impression
