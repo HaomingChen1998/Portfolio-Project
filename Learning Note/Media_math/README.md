@@ -7,5 +7,5 @@ CPM = Cost / Impression
 CPC = Cost / Click
 
 **<small>Click Through Rate**<small>  
-CPC = Clicks / Impression
+CTR = Clicks / Impression
 
