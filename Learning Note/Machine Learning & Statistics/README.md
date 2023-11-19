@@ -214,9 +214,10 @@ Different Dimensions:
 
 
 <h1 align="center">Percentile:</h1>     
-- 25th percentile means the values where 25% of the data is below that value.
-- Calculation Example: number of data points * 0.25
-- 75th percentile means the values where 75% of the data is below that value.
-- Calculation Example: number of data points * 0.75
-- 50th percentile is the same as medium  
-
+- 25th percentile means the values where 25% of the data is below that value.  
+- Calculation Example: number of data points * 0.25  
+- 75th percentile means the values where 75% of the data is below that value.  
+- Calculation Example: number of data points * 0.75  
+- 50th percentile is the same as medium    
+  https://www.youtube.com/watch?v=7sJaRHF03K8    
+  https://www.youtube.com/watch?v=MSQpvuPL2cw 
