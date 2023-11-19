@@ -3,5 +3,9 @@
 **<small>Cost Per Impression**<small>  
 CPM = Cost / Impression
 
-**<small>Cost Per Impression**<small>  
-CPM = Cost / Impression
+**<small>Cost Per Click**<small>  
+CPC = Cost / Click
+
+**<small>Click Through Rate**<small>  
+CPC = Clicks / Impression
+
