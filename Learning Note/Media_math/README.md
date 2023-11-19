@@ -12,5 +12,5 @@ CTR = Clicks / Impression
 **<small>Video Complete Rate**<small>  
 VCR = (View-throughs * 100) / Impressions  
 OR     
-VCR = (View-throughs / Impressions) * 100
+VCR = (View-throughs / Impressions) * 100  
 a “view through” typically refers to a viewer watching an entire video ad without skipping it
