@@ -213,7 +213,8 @@ Different Dimensions:
 - Ex: Suppose a healthcare marketing campaign is promoting a new fitness device and collects data on its effectiveness only from fitness enthusiasts or professional athletes. This would introduce a sampling bias, as these individuals are not representative of the general population.
 
 
-<h1 align="center">Percentile:</h1>     
+<h1 align="center">Percentile:</h1> 
+
 - 25th percentile means the values where 25% of the data is below that value.  
 - Calculation Example: number of data points * 0.25  
 - 75th percentile means the values where 75% of the data is below that value.  
