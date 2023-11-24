@@ -10,3 +10,7 @@
 2. Insert Slicer
 3. Choose what you want to filter by
 4. Go to Slicer Tab on the top right corner.
+
+# Freeze column (that is not the first column)
+1. Click on a cell from the second column after the column you want to free
+2. Click on "View" ribbon -> freeze panes -> freeze panes
