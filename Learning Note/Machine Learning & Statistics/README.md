@@ -217,8 +217,18 @@ Different Dimensions:
 
   https://www.youtube.com/watch?v=7sJaRHF03K8    
   https://www.youtube.com/watch?v=MSQpvuPL2cw 
-- 25th percentile means the values where 25% of the data is below that value.  
-- Calculation Example: number of data points * 0.25  
+
+**<small>Calculation**<small>
+
+- Sort numbers in ascending order
+- (number of data points) * (percentile in decimal form)
+- Ex: 25th percentile = (number of data points) * 0.25
+- If above equals to 11, then look for the 11th number from beginning to end in the ordered dataset.
+- The number after this number is 25th percentile, in this case, number 12 is the 25th percentile. Meaning 20% of the data are below number 12
+
+**<small>Meaning**<small>
+
+- 25th percentile means the values where 25% of the data is below that value.
 - 75th percentile means the values where 75% of the data is below that value.  
 - Calculation Example: number of data points * 0.75  
 - 50th percentile is the same as medium    
