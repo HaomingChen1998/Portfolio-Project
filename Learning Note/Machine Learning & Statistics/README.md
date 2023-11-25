@@ -221,9 +221,8 @@ Different Dimensions:
 **<small>Calculation**<small>
 
 1. Order all the values in the data set from smallest to largest.
-2. Index = (total_number_of_values * percentile_in_decimal_form).
-- Example:
-  - If you have 10 pieces of data or values in the data set, number_of_values = 10.
+2. Index = (total_number_of_values * percentile_in_decimal_form)
+  - If you have 10 pieces of data or values in the data set, number_of_values = 10
   - If you want to find the 25th percentile, percentile_in_decimal_form = 0.25
 3. If index is WHOLE number:
     - Count the values in your data until you reach the index.
