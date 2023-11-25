@@ -16,6 +16,6 @@
 2. Click on "View" ribbon -> freeze panes -> freeze panes
 
 # Percentile
-1. =PERCENTILE.INC(), same as Percentile(), is more common that includes the first and last value OR including kth percentile of 0 and 1.
-2. =PERCENTILE.EXC() is less common that excludes the first and last value OR excluding kth percentile of 0 and 1. Also, k OR kth percentile will return NULL if = 0 or 1
+1. =PERCENTILE.INC(), same as Percentile(), is more common that includes the first and last value. In other words, including kth percentile of 0 and 1.
+2. =PERCENTILE.EXC() is less common that excludes the first and last value. In other words, excluding kth percentile of 0 and 1. Also, if you set k, aka "kth percentile" equals to 0, it will return NULL.
 3. If there are empty cell in between, it’s going to treat it as if it doesn’t exist, and move the next number forward.
