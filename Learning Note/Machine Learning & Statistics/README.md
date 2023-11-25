@@ -220,11 +220,15 @@ Different Dimensions:
 
 **<small>Calculation**<small>
 
-- Sort numbers in ascending order
-- (number of data points) * (percentile in decimal form)
-- Ex: 25th percentile = (number of data points) * 0.25
-- If above equals to 11, then look for the 11th number from beginning to end in the ordered dataset.
-- The number after this number is 25th percentile, in this case, number 12 is the 25th percentile. Meaning 20% of the data are below number 12
+1. Order all the values in the data set from smallest to largest.
+2. Index = (total_number_of_values * percentile_in_decimal_form).
+- Ex:
+- If you have 10 pieces of data or values in the data set, number_of_values = 10.
+- If you want to find the 25th percentile, percentile_in_decimal_form = 0.25
+3. If index is WHOLE number:
+- Count the values in your data until you reach the index. The kth percentile is the average of that corresponding value in your data and the value that directly follows it.
+4. If index is Decimal number:
+- Count the values in your data until you reach the index. The corresponding value in your data set is the kth percentile.
 
 **<small>Meaning**<small>
 
