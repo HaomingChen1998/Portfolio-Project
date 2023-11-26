@@ -36,7 +36,11 @@
 # Combine text using Flash Fill  
 ```
 Ex:: 
-Column  A          B          C
-        Cody     Chen      Cody Chen
+Column  A           B          C
+        Cody       Chen      Cody Chen
+        ...        ...       Cody Chen
+        ...        ...       Cody Chen
 ```
-1. Then just fill the entire 
+1. Fill the entire row with how you want to combine
+2. Then click on Flash Fill like below  
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Excel%20Flash%20Fill.png)
