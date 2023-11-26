@@ -34,7 +34,9 @@
 3. View -> View Macros -> Run
 
 # Combine text using Flash Fill  
+'''
 Ex:: 
 Column  A          B          C
         Cody     Chen      Cody Chen
+'''
 1. Then just fill the entire 
