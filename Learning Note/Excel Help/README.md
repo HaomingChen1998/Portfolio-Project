@@ -27,3 +27,8 @@
 # Absolute vs Relative Reference [F4 Key]
 1. Absolute Reference: when you drag down the formula, it locks on to a specific value, instead of looking for the value in next row to do the calculation.
 2. Relative Reference: when you drag down the formula, it looks for the value in next row to do the calculation.
+
+# Record Macro
+1. View -> Macros -> Record Macro [Make sure Use Relative References is checked]
+2. When done recording -> View -> Macros -> Stop Recording
+3. View -> View Macros -> Run
