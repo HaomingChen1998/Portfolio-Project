@@ -24,6 +24,6 @@
 1. Select all the data below a column (excluding column name itself)
 2. Formula->Define Name
 
-# Absolute vs Relative Reference
+# Absolute vs Relative Reference [F4 Key]
 1. Absolute Reference: when you drag down the formula, it locks on to a specific value, instead of looking for the value in next row to do the calculation.
 2. Relative Reference: when you drag down the formula, it looks for the value in next row to do the calculation.
