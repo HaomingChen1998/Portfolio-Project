@@ -20,6 +20,6 @@
 2. =PERCENTILE.EXC() is less common that excludes the first and last value. In other words, excluding kth percentile of 0 and 1. Also, if you set k, aka "kth percentile" equals to 0, it will return NULL.
 3. If there are empty cell in between, it’s going to treat it as if it doesn’t exist, and move the next number forward.
 
-# Give data a column name
+# Give name to the data under a column
 1. Select all the data below a column (excluding column name itself)
 2. Formula->Define Name
