@@ -32,3 +32,9 @@
 1. View -> Macros -> Record Macro [Make sure Use Relative References is checked]
 2. When done recording -> View -> Macros -> Stop Recording
 3. View -> View Macros -> Run
+
+# Combine text using Flash Fill  
+Ex:: 
+Column  A          B          C
+        Cody     Chen      Cody Chen
+1. Then just fill the entire 
