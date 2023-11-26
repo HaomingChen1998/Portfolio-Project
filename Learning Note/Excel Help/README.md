@@ -44,3 +44,10 @@ Column  A           B          C
 1. Fill the entire row with how you want to combine
 2. Then click on Flash Fill like below  
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Excel%20Flash%20Fill.png)
+
+# Convert Date to Year
+1. =CONVERT(number, from_unit, to unit)
+- number = cells to be converted
+- from_unit = "day"
+- to unit = "yr"
+   
