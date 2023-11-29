@@ -30,6 +30,23 @@ df.columns = df.columns.str.replace(' ', '_').str.lower()
 iloc[] only accept numbers inside [], but when you refer to a column name inside [], you should use loc. Ex:df1.loc[:3, 'column_name'].
 result_name.to_csv(r'C:\Users\codchen1\Desktop\file_name.csv', index=False)
 
+# Different ways to export as csv from vscode
+results.to_csv(r'C:\Users\Cody\Desktop\results.csv', index=False)
+
+results.to_csv('C:/Users/Cody/Desktop/results.csv', index=False)
+
+results.to_csv('results.csv', index=False)
+
+
+import csv
+# exporting a string variable into the csv file
+input_variable = "GeeksForGeeks"
+# Example.csv gets created in the current working directory
+with open('Example.csv', 'w', newline = '') as csvfile:
+    my_writer = csv.writer(csvfile, delimiter = ' ')
+    my_writer.writerow(input_variable)
+
+
 ```
 
 # Python Environment VScode Syntax
