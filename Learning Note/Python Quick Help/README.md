@@ -232,3 +232,15 @@ python -m stay-awake 5
 ```
 Then put awake.bat file in the windows startup folder by doing Win+R, shell:startup
 
+# Building Local GPT4 for free using Python
+```
+; Run the following code in Python
+pip install g4f -U
+g4f gui -port 8080
+; Run the following code in browser
+http://127.0.0.1:8080/chat/
+```
+
+
+
+
