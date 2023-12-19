@@ -239,7 +239,7 @@ pip install g4f -U
 g4f gui -port 8080
 ; Run the following code in browser
 http://127.0.0.1:8080/chat/
-; Run in cmd:
+; Run in cmd if you don't want to run in Python:
 "C:\Virtual_Environment_3.11\Scripts\python.exe" -c "import g4f; g4f.gui('-port', '8080')"
 ```
 
