@@ -1,0 +1,105 @@
+; Allow 5 different actions while holding defined hotkey with increasing soundbeep, allow to customize certain tooltips for different actions (optional)
+;Tooltips := {}
+;Tooltips.F20 := ["Customized Tooltip for action 1","Customized Tooltip for action 2","Customized Tooltip for action 3"]
+;Return
+
+CheckDuration:
+    RegExMatch(A_ThisHotkey, "\W$|\w*$", Hotkey)
+    Static LastPressTime := 0
+    
+    ; Check for double press
+    If (A_TickCount - LastPressTime < 500) {
+        MsgBox, Double pressed
+        LastPressTime := 0
+    } Else {
+        LastPressTime := A_TickCount
+        CheckTooltip := Func("CheckTooltip").Bind(Hotkey, A_TickCount)
+        SetTimer, % CheckTooltip, -1
+        KeyWait, % Hotkey
+        SetTimer, % CheckTooltip, Off
+        ToolTip
+    }
+Return
+
+CheckTooltip(Hotkey, Start) {
+    Global Action, Tooltips
+    Static OldAction, OldStart
+    SetTimer,, % GetKeyState(Hotkey, "P") ? -25 : "Off"
+    While, (A_TickCount - Start) > [0, 250, 1000, 2000, 3000, 4000, (1 << -1) - 1][A_Index]
+        Action := A_Index
+    If (Action = OldAction) And (Start = OldStart)
+        Return
+    ToolTip, % (Different := Tooltips[Hotkey, OldAction := Action]) ? Different : "Release " Hotkey " to trigger Action " Action
+    If (Action != 1)
+        SoundBeep, 440 * 2 ** (Action / 12), (200, OldStart := Start)
+}
+
+/*
+; Example:
+
+F20::
+Gosub CheckDuration
+Switch Action
+{
+    Case 1:msgbox, first action triggered
+    Case 2:msgbox, second action triggered
+    Case 3:msgbox, third action triggered
+    Case 4:msgbox, fourth action triggered
+    Case 5:msgbox, fifth action triggered
+}
+Return
+*/
+
+
+
+--------------------
+; Allow 5 different actions while holding defined hotkey with increasing soundbeep, allow to customize certain tooltips for different actions (optional)
+;Tooltips := {}
+;Tooltips.F20 := ["Customized Tooltip for action 1","Customized Tooltip for action 2","Customized Tooltip for action 3"]
+;Return
+
+CheckDuration:
+    RegExMatch(A_ThisHotkey, "\W$|\w*$", Hotkey)
+    Static LastPressTime := 0
+    
+    If (A_TickCount - LastPressTime < 500) {
+        MsgBox, Double pressed
+        LastPressTime := 0
+    } Else {
+        LastPressTime := A_TickCount
+        CheckTooltip := Func("CheckTooltip").Bind(Hotkey, A_TickCount)
+        SetTimer, % CheckTooltip, -1
+        KeyWait, % Hotkey
+        SetTimer, % CheckTooltip, Off
+        ToolTip
+        Switch Action
+        {
+            Case 1:msgbox, first action triggered
+            Case 2:msgbox, second action triggered
+            Case 3:msgbox, third action triggered
+            Case 4:msgbox, fourth action triggered
+            Case 5:msgbox, fifth action triggered
+        }
+    }
+Return
+
+CheckTooltip(Hotkey, Start) {
+    Global Action, Tooltips
+    Static OldAction, OldStart
+    SetTimer,, % GetKeyState(Hotkey, "P") ? -25 : "Off"
+    While, (A_TickCount - Start) > [0, 250, 1000, 2000, 3000, 4000, (1 << -1) - 1][A_Index]
+        Action := A_Index
+    If (Action = OldAction) And (Start = OldStart)
+        Return
+    ToolTip, % (Different := Tooltips[Hotkey, OldAction := Action]) ? Different : "Release " Hotkey " to trigger Action " Action
+    If (Action != 1)
+        SoundBeep, 440 * 2 ** (Action / 12), (200, OldStart := Start)
+}
+
+/*
+; Example:
+
+F20::
+Gosub CheckDuration
+Return
+*/
