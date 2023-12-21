@@ -1,0 +1,108 @@
+M300(Max) {
+    Global M300 := Max
+    SetTimer, CheckCapsLock, 50
+}
+
+CheckCapsLock:
+    If (M300 > 0) {
+        If (A_TimeSincePriorHotkey < 2000) {
+            elapsedTime := A_TickCount - startTime
+            If (GetKeyState("CapsLock", "P")) {
+                If (elapsedTime > M300 * 300) {
+                    M300 := 0
+                    SetTimer, CheckCapsLock, Off
+                    SendInput, % "{Text}" (M300 + 1)
+                }
+            } Else {
+                M300 := 0
+                SetTimer, CheckCapsLock, Off
+            }
+        } Else {
+            M300 := 0
+            SetTimer, CheckCapsLock, Off
+        }
+    }
+Return
+
+; Examples
+:*?xB0:msg::
+    startTime := A_TickCount
+    M300(3)
+Return
+
+:*?xB:msg1::MsgBox, , , triggered 300-600 ms, 1
+:*?xB:msg2::MsgBox, , , triggered 600-900 ms, 1
+:*?xB:msg3::MsgBox, , , triggered > 900 ms, 1
+
+
+
+
+-------------------------------------------------------
+M300(Max, Hotstring) {
+    Global M300 := Max
+    Global HotstringToTrigger := Hotstring
+
+    StartTime := A_TickCount
+    While GetKeyState("CapsLock", "P") {
+        CurrentTime := A_TickCount
+        ElapsedTime := CurrentTime - StartTime
+        If (ElapsedTime > M300 * 300) {
+            SetTimer, TriggerHotstring, -10
+            Break
+        }
+    }
+}
+
+TriggerHotstring:
+    SendInput, % "{Text}" HotstringToTrigger
+    HotstringToTrigger := ""
+Return
+
+; Examples
+:*?xB0:msg::M300(3, "msg")
+:*?xB:msg1::MsgBox, , , triggered 300-600 ms, 1
+:*?xB:msg2::MsgBox, , , triggered 600-900 ms, 1
+:*?xB:msg3::MsgBox, , , triggered > 900 ms, 1
+
+
+----------------------------------------------------------
+
+M300(Max, Hotstring) {
+    Global M300 := Max
+    Global HotstringToTrigger := Hotstring
+    SetTimer, CheckCapsLockDuration, 10
+}
+
+CheckCapsLockDuration:
+    Static StartTime := 0
+    If (M300 > 0) {
+        If (!StartTime) {
+            StartTime := A_TickCount
+        }
+        
+        elapsedTime := A_TickCount - StartTime
+        If (!GetKeyState("CapsLock", "P")) {
+            M300 := 0
+            StartTime := 0
+            SetTimer, CheckCapsLockDuration, Off
+        } Else If (elapsedTime > M300 * 300) {
+            M300 := 0
+            StartTime := 0
+            SetTimer, CheckCapsLockDuration, Off
+            SendInput, % "{Text}" HotstringToTrigger
+            HotstringToTrigger := ""
+        }
+    } Else {
+        StartTime := 0
+        SetTimer, CheckCapsLockDuration, Off
+    }
+Return
+
+; Examples
+:*?xB0:msg::M300(3, "msg")
+:*?xB:msg1::MsgBox, , , triggered 300-600 ms, 1
+:*?xB:msg2::MsgBox, , , triggered 600-900 ms, 1
+:*?xB:msg3::MsgBox, , , triggered > 900 ms, 1
+
+------------------------------------------
+
