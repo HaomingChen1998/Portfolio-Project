@@ -1,0 +1,100 @@
+Text + CapsLock trigger problem
+
+Rohwedder from autohotkey help forum has kindly helped me to create a script that uses capslock with text to trigger different actions. But one problem with this script is that it's extremely inconsistent, most of the time it doesn't trigger the action for msg1, 2, or 3. So the only time it works is when I run the same code in 2 separate individual script at the same time. If I only run the code in one script, then it shows the tooltip, and sends the number normally with capslock, but just doesn't trigger the action. If i run the same code in 2 individual script, then it triggers the action as well. I reinstalled my PC, and installed a clean AHK 1.1.37.01, and it behaved the same. But still no clue on why this is the case.
+
+Use Case Examples:
+:*?xB0:msg::M300(3)
+:*?xB:msg1::MsgBox,,, triggered 300-600 ms, 1
+:*?xB:msg2::MsgBox,,, triggered 600-900 ms, 1
+:*?xB:msg3::MsgBox,,, triggered > 900 ms, 1
+; While keeping the normal functionality of capslock key, when I type msg and hold capslock for 300-600ms, it should trigger action 1. When I type msg and hold capslock for 600-900ms, it should trigger action 2, and so on. 
+
+
+The entire code created by Rohwedder is as follow:
+
+M300(Max) {
+    Global M300 := Max
+    SetTimer, *CapsLock Up, -2000
+} ; CapsLock triggers Hotkeys for only 2 seconds
+*CapsLock Up::M300 := ""
+*CapsLock::
+SetTimer, *CapsLock Up, Off
+Loop
+    ToolTip,% M300?T300:=A_TimeSinceThisHotkey//300:""
+Until, (T300 >= M300) Or !GetKeyState("CapsLock","P")
+ToolTip,% M300 := ""
+SendLevel, 1
+If T300 ; distinction by 300 ms intervals    
+    SendInput,% "{Text}" T300 (T300:="")
+Else SetCapsLockState,% !GetKeyState("CapsLock", "T")
+KeyWait, Capslock
+Return
+
+/*
+; Examples
+:*?xB0:msg::M300(3) ; there are Hotstrings: msg1-msg3
+:*?xB:msg1::MsgBox,,, triggered 300-600 ms, 1
+:*?xB:msg2::MsgBox,,, triggered 600-900 ms, 1
+:*?xB:msg3::MsgBox,,, triggered > 900 ms, 1
+:*?xB0:two::M300(2) ; there are Hotstrings: two1-two2
+:*?xB:two1::MsgBox,,, triggered 300-600 ms, 1
+:*?xB:two2::MsgBox,,, triggered > 600 ms, 1
+*/
+
+
+
+
+
+
+
+
+
+;---------------------------------------------------------------------Hotkey 4 Action Trigger--------------------------------------------------------------------------
+; Allow 5 different actions while holding defined hotkey with increasing soundbeep, allow to customize certain tooltips for different actions (optional)
+   ;Tooltips := {}
+   ;Tooltips.F20 := ["Customized Tooltip for action 1","Customized Tooltip for action 2","Customized Tooltip for action 3"]
+   ;Return
+   
+   CheckDuration:
+      RegExMatch(A_ThisHotkey, "\W$|\w*$", Hotkey)
+      CheckTooltip := Func("CheckTooltip").Bind(Hotkey,A_TickCount)
+      SetTimer,% CheckTooltip, -1
+      KeyWait,% Hotkey
+      SetTimer,% CheckTooltip, Off
+      ToolTip
+   Return
+
+   CheckTooltip(Hotkey, Start) {
+      Global Action, Tooltips
+      Static OldAction, OldStart
+      SetTimer,,% GetKeyState(Hotkey,"P")?-25:"Off"
+      While, (A_TickCount-Start) > [0,250,1000,2000,3000,4000,(1<<-1)-1][A_Index]
+         Action := A_Index
+      IF (Action = OldAction) And (Start = OldStart)
+         Return
+      ToolTip,% (Different := Tooltips[Hotkey, OldAction := Action])
+         ? Different : "Release " Hotkey " to trigger Action " Action
+      If (Action != 1)
+         SoundBeep, 440*2**(Action/12), (200, OldStart := Start)
+   }
+
+/*
+; Example:
+
+F20::
+Gosub CheckDuration
+Switch Action
+{
+	Case 1:msgbox, first action triggered
+	Case 2:msgbox, second action triggered
+	Case 3:msgbox, third action triggered
+	Case 4:msgbox, fourth action triggered
+	Case 5:msgbox, fifth action triggered
+}
+Return
+*/
+can you modify the code so that if I quickly press the hotkey and then release, and within 500ms, quickly press the hotkey and release again. Then trigger a msgbox, double pressed
+   ;=========================================================================END HERE===========================================================================
+
+
+Is there a simple approach to delete the lastest item from my clipboard?
