@@ -228,7 +228,7 @@ https://github.com/singhsidhukuldeep/stay-awake
 
 ```
 pip install stay-awake
-python -m stay-awake 5
+python -m stay-awake
 ```
 Make sure to replace the doMove function with the following code from C:\Users\codchen1\Desktop\Main.Py\Lib\site-packages\stay-awake\__init__.py, so mouse movement is more further away from each other.
 ```
