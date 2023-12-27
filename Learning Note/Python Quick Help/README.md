@@ -229,6 +229,7 @@ https://github.com/singhsidhukuldeep/stay-awake
 ```
 pip install stay-awake
 python -m stay-awake 5
+g4fCommand := "& c:/Virtual_Environment_3.11/Scripts/Activate.ps1; g4f gui -port 8080"
 ```
 Then put awake.bat file in the windows startup folder by doing Win+R, shell:startup
 
