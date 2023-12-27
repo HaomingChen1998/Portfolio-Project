@@ -228,34 +228,10 @@ https://github.com/singhsidhukuldeep/stay-awake
 
 ```
 pip install stay-awake
+- Make sure to replace the __init__.py from C:\Users\codchen1\Desktop\Main.Py\Lib\site-packages\stay-awake\__init__.py, so it sends Num Key press instead of mouse movement.
 python -m stay-awake
+- Then put awake.bat file in the windows startup folder by doing Win+R, shell:startup
 ```
-Make sure to replace the doMove function with the following code from C:\Users\codchen1\Desktop\Main.Py\Lib\site-packages\stay-awake\__init__.py, so mouse movement is more further away from each other.
-```
-def doMove(currentLocation):
-    try:
-        print(f'>> Moving at {currentLocation}')
-        n_move = randint(50, 100)
-        for _ in range(4):
-            if hasMoved(currentLocation): break
-            pyautogui.moveTo(currentLocation[0] + n_move, currentLocation[1] + n_move)
-            pyautogui.moveTo(currentLocation)
-            if hasMoved(currentLocation): break
-            pyautogui.moveTo(currentLocation[0] - n_move, currentLocation[1] - n_move)
-            pyautogui.moveTo(currentLocation)
-            if hasMoved(currentLocation): break
-            pyautogui.moveTo(currentLocation[0] - n_move, currentLocation[1] + n_move)
-            pyautogui.moveTo(currentLocation)
-            if hasMoved(currentLocation): break
-            pyautogui.moveTo(currentLocation[0] + n_move, currentLocation[1] - n_move)
-            pyautogui.moveTo(currentLocation)
-        print(f'>> Made movement at {datetime.now().time()}')
-    except Exception as exp:
-        print(f'>><< Error: {exp}')
-        print(errorMessage)
-        exit()
-```
-Then put awake.bat file in the windows startup folder by doing Win+R, shell:startup
 
 # Building Local GPT4 for free using Python
 ```
