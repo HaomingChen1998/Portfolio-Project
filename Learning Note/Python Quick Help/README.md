@@ -48,6 +48,50 @@ with open('Example.csv', 'w', newline = '') as csvfile:
 
 
 ```
+# Visualization with Pandas
+There are several plot types built into pandas; most of them are statistical by nature:  
+
+```
+df.plot.hist()
+df.plot.barh()
+df.plot.line()
+df.plot.area()
+df.plot.hexbin()
+df.plot.bar()
+df.plot.scatter()
+df.plot.box()
+df.plot.kde()
+df.plot.pie()
+```
+
+You can also call specific plots by passing their name as an argument, as with 
+df.plot (kind=' area').
+
+EXAMPLES:  
+```
+df['Column_Name'].plot.hist()
+```   
+If you can see the edge, you can modify the code like hist(edgecolor='k')   
+If you want more bars, hist(bin=20), the number can be whatever number of bars.  
+
+```
+title='title_name'
+df.set_xlabel('xlabel_name')
+df.set_ylabel('ylabel_name')
+bins=20
+```
+
+# Visualization with Seaborn
+
+```
+sns.scatterplot(x='column_name', y='column_name', hue='Year', data=df)
+sns.pairplot(df, var=['column_name', 'column_name2'], hue='column_name')
+
+df_corr = df[['column_name', 'column_name2']].dropna().corr()
+sns.heatmap(df_corr, annot=True)
+
+plt.show()
+```
 
 # Python Environment VScode Syntax
 
@@ -178,50 +222,6 @@ if __name__=="__main__": # When a function gets imported, it would also be execu
     test_GeoLiftMarketSelection()
 ```
 
-# Visualization with Pandas
-There are several plot types built into pandas; most of them are statistical by nature:  
-
-```
-df.plot.hist()
-df.plot.barh()
-df.plot.line()
-df.plot.area()
-df.plot.hexbin()
-df.plot.bar()
-df.plot.scatter()
-df.plot.box()
-df.plot.kde()
-df.plot.pie()
-```
-
-You can also call specific plots by passing their name as an argument, as with 
-df.plot (kind=' area').
-
-EXAMPLES:  
-```
-df['Column_Name'].plot.hist()
-```   
-If you can see the edge, you can modify the code like hist(edgecolor='k')   
-If you want more bars, hist(bin=20), the number can be whatever number of bars.  
-
-```
-title='title_name'
-df.set_xlabel('xlabel_name')
-df.set_ylabel('ylabel_name')
-bins=20
-```
-
-# Visualization with Seaborn
-
-```
-sns.scatterplot(x='column_name', y='column_name', hue='Year', data=df)
-sns.pairplot(df, var=['column_name', 'column_name2'], hue='column_name')
-
-df_corr = df[['column_name', 'column_name2']].dropna().corr()
-sns.heatmap(df_corr, annot=True)
-
-plt.show()
-```
 
 # Run Python Code from CMD
 
