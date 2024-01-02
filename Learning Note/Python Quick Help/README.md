@@ -223,6 +223,14 @@ sns.heatmap(df_corr, annot=True)
 plt.show()
 ```
 
+# Run Python Code from CMD
+
+```
+@echo off
+"C:\Users\codchen1\Desktop\Default_Python\Scripts\python.exe" -u "C:\Users\codchen1\Desktop\Main.Py\date_cal.py"
+pause
+```
+
 # Prevent Computer from Sleeping  
 https://github.com/singhsidhukuldeep/stay-awake
 
