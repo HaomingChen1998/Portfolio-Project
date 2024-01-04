@@ -51,3 +51,64 @@ Column  A           B          C
 - from_unit = "day"
 - to unit = "yr"
    
+# Macro
+Sub Macro2()
+'
+' Macro2 Macro
+'
+
+'
+    Range("A2").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Selection.Copy
+    Sheets("Performance to Benchmark_110623").Select
+    Range("A2").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Range(Selection, Selection.End(xlDown)).Select
+    ActiveSheet.Paste
+    Sheets("Pivot").Select
+    Application.CutCopyMode = False
+    ActiveSheet.PivotTables("PivotTable1").PivotCache.Refresh
+    ActiveWorkbook.ShowPivotTableFieldList = True
+    ActiveSheet.PivotTables("PivotTable1").PivotFields("Week End Date").AutoSort _
+        xlAscending, "Week End Date"
+    Sheets("Output").Select
+    
+    ActiveSheet.Range("$A$9:$O$436").AutoFilter Field:=5, Criteria1:= _
+        "=CPC (w/o Dig Vid)", Operator:=xlOr, Criteria2:="=Media Cost (-dig vid)"
+    Dim firstVisibleCell As Range
+    Set firstVisibleCell = Range("F10:F436").SpecialCells(xlCellTypeVisible).Cells(1, 1)
+    Range(firstVisibleCell, ActiveSheet.Cells.SpecialCells(xlCellTypeVisible).Cells.SpecialCells(xlLastCell)).Select
+    Selection.NumberFormat = "$#,##0.00"
+    
+    ActiveSheet.Range("$A$9:$O$436").AutoFilter Field:=5, Criteria1:= _
+        "=CTR (w/o Dig Vid)", Operator:=xlOr, Criteria2:="=VCR"
+    Set firstVisibleCell = Range("F10:F436").SpecialCells(xlCellTypeVisible).Cells(1, 1)
+    Range(firstVisibleCell, ActiveSheet.Cells.SpecialCells(xlCellTypeVisible).Cells.SpecialCells(xlLastCell)).Select
+    Selection.NumberFormat = "0.00%"
+    
+    ActiveSheet.Range("$A$9:$O$436").AutoFilter Field:=5
+    
+    Range("A9").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Selection.Copy
+    Sheets("Last Weeks Data").Select
+    Range("HistoricalData[[#Headers],[Campaign Brand]]").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Range(Selection, Selection.End(xlDown)).Select
+    ActiveSheet.Paste
+    Sheets("Pivot").Select
+    
+    Range("A4").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Selection.Copy
+    Sheets("Output").Select
+    Range("A9").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Range(Selection, Selection.End(xlDown)).Select
+    ActiveSheet.Paste
+End Sub
+
