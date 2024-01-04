@@ -54,12 +54,13 @@ Column  A           B          C
 # Macro
 
 ```
-Sub Macro2()
+Sub DataPull_1()
 '
-' Macro2 Macro
+' DataPull_1 Macro
 '
 
 '
+    Sheets("new_data").Select
     Range("A2").Select
     Range(Selection, Selection.End(xlToRight)).Select
     Range(Selection, Selection.End(xlDown)).Select
@@ -112,5 +113,24 @@ Sub Macro2()
     Range(Selection, Selection.End(xlToRight)).Select
     Range(Selection, Selection.End(xlDown)).Select
     ActiveSheet.Paste
+    
+    Sheets("Output").Select
+
+    ActiveSheet.Range("$A$9:$O$436").AutoFilter Field:=5, Criteria1:= _
+        "=CPC (w/o Dig Vid)", Operator:=xlOr, Criteria2:="=Media Cost (-dig vid)"
+    Set firstVisibleCell = Range("F10:F436").SpecialCells(xlCellTypeVisible).Cells(1, 1)
+    Range(firstVisibleCell, ActiveSheet.Cells.SpecialCells(xlCellTypeVisible).Cells.SpecialCells(xlLastCell)).Select
+    Selection.NumberFormat = "$#,##0.00"
+    
+    ActiveSheet.Range("$A$9:$O$436").AutoFilter Field:=5, Criteria1:= _
+        "=CTR (w/o Dig Vid)", Operator:=xlOr, Criteria2:="=VCR"
+    Set firstVisibleCell = Range("F10:F436").SpecialCells(xlCellTypeVisible).Cells(1, 1)
+    Range(firstVisibleCell, ActiveSheet.Cells.SpecialCells(xlCellTypeVisible).Cells.SpecialCells(xlLastCell)).Select
+    Selection.NumberFormat = "0.00%"
+    
+    ActiveSheet.Range("$A$9:$O$436").AutoFilter Field:=5
+    
+    Sheets("Pivot").Select
 End Sub
+
 ```
