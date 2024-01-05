@@ -52,7 +52,7 @@ Column  A           B          C
 - to unit = "yr"
    
 # Macro
-1. Select range to last row/column
+1. Select range to last row/column  
 https://www.youtube.com/watch?v=DpwAO5qnvAQ
 ```
 Option Explicit
