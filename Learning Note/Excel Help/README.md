@@ -53,6 +53,7 @@ Column  A           B          C
    
 # Macro
 1. Select range to last row/column
+https://www.youtube.com/watch?v=DpwAO5qnvAQ
 ```
 Option Explicit
 
