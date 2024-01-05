@@ -52,6 +52,98 @@ Column  A           B          C
 - to unit = "yr"
    
 # Macro
+1. Select range to last row/column
+```
+Option Explicit
+
+' Description: Tests the custom made Find functions in this module.
+' Worksheet: DataJagged
+' YouTube video: https://youtu.be/DpwAO5qnvAQ
+' ExcelMacroMastery.com
+Sub TestFind()
+
+    ' Print the range address,last cell address, row and column to Immediate Window(Ctrl + G)
+    Debug.Print "Last row is " & FindLastRow(shJagged.Cells)
+    Debug.Print "Last column is " & FindLastcolumn(shJagged.Cells)
+    
+    Debug.Print "Last cell is: " & FindLastCell(shJagged.Cells).Address
+    Debug.Print "The full range is: " & BuildRangeToLastCell(shJagged.Cells).Address
+    
+End Sub
+
+' Description: Finds the last cell in a given range or worksheet.
+' YouTube video: https://youtu.be/DpwAO5qnvAQ
+' ExcelMacroMastery.com
+Function FindLastCell(rg As Range) As Range
+    
+    On Error GoTo eh
+    Dim lastRow As Long, lastColumn As Long
+    
+    lastRow = rg.Find("*", , Lookat:=xlPart, LookIn:=xlFormulas _
+            , searchorder:=xlByRows, searchdirection:=xlPrevious).Row
+    lastColumn = rg.Find("*", , Lookat:=xlPart, LookIn:=xlFormulas _
+            , searchorder:=xlByColumns, searchdirection:=xlPrevious).Column
+
+    Set FindLastCell = rg.Parent.Cells(lastRow, lastColumn)
+Exit Function
+eh:
+   If Err.Number = 91 Then
+        MsgBox "No data found for range [" & rg.Address & "]. Last cell will be set to first cell of range."
+    End If
+    Set FindLastCell = rg.Cells(1, 1)
+End Function
+
+' Description: Finds the last row in a given range or worksheet.
+' YouTube video: https://youtu.be/DpwAO5qnvAQ
+' ExcelMacroMastery.com
+Function FindLastRow(rg As Range) As Long
+    
+    On Error GoTo eh
+    
+    FindLastRow = rg.Find("*", , Lookat:=xlPart, LookIn:=xlFormulas _
+            , searchorder:=xlByRows, searchdirection:=xlPrevious).Row
+Exit Function
+eh:
+   If Err.Number = 91 Then
+        MsgBox "No data found for range [" & rg.Address & "]. Last row will be set to first row of range."
+    End If
+    FindLastRow = rg.Cells(1, 1).Row
+End Function
+
+' Description: Finds the last column in a given range or worksheet.
+' YouTube video: https://youtu.be/DpwAO5qnvAQ
+' ExcelMacroMastery.com
+Function FindLastcolumn(rg As Range) As Long
+        
+    On Error GoTo eh
+    
+    FindLastcolumn = rg.Find("*", , Lookat:=xlPart, LookIn:=xlFormulas _
+            , searchorder:=xlByColumns, searchdirection:=xlPrevious).Column
+
+Exit Function
+eh:
+   If Err.Number = 91 Then
+        MsgBox "No data found for range [" & rg.Address & "]. Last column will be set to first row of range."
+    End If
+    FindLastcolumn = rg.Cells(1, 1).Column
+End Function
+
+
+' Description: Builds a range based on the last row in a given range or worksheet.
+' YouTube video: https://youtu.be/DpwAO5qnvAQ
+' ExcelMacroMastery.com
+Function BuildRangeToLastCell(rg As Range _
+                    , Optional startRow As Long = 1 _
+                    , Optional startcolumn As Long = 1) As Range
+    
+    ' Build the range from the first cell of the range(or based on the optional
+    ' parameters) to the last cell found in the range.
+    Set BuildRangeToLastCell = rg.Parent.Range( _
+                            rg.Cells(startRow, startcolumn).Address _
+                            , FindLastCell(rg).Address)
+
+End Function
+```
 
 ```
 Sub DataPull_1()
