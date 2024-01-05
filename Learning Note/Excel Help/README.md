@@ -87,9 +87,8 @@ Sub Macro5()
     Sheets("Output").Columns(lastColumn).Select
     
 End Sub
-' Description: Finds the last cell in a given range or worksheet.
-' YouTube video: https://youtu.be/DpwAO5qnvAQ
-' ExcelMacroMastery.com
+
+' Functions Below
 Function FindLastCell(rg As Range) As Range
     
     On Error GoTo eh
@@ -109,9 +108,6 @@ eh:
     Set FindLastCell = rg.Cells(1, 1)
 End Function
 
-' Description: Finds the last row in a given range or worksheet.
-' YouTube video: https://youtu.be/DpwAO5qnvAQ
-' ExcelMacroMastery.com
 Function FindLastRow(rg As Range) As Long
     
     On Error GoTo eh
@@ -126,9 +122,6 @@ eh:
     FindLastRow = rg.Cells(1, 1).Row
 End Function
 
-' Description: Finds the last column in a given range or worksheet.
-' YouTube video: https://youtu.be/DpwAO5qnvAQ
-' ExcelMacroMastery.com
 Function FindLastcolumn(rg As Range) As Long
         
     On Error GoTo eh
@@ -145,9 +138,6 @@ eh:
 End Function
 
 
-' Description: Builds a range based on the last row in a given range or worksheet.
-' YouTube video: https://youtu.be/DpwAO5qnvAQ
-' ExcelMacroMastery.com
 Function BuildRangeToLastCell(rg As Range _
                     , Optional startRow As Long = 1 _
                     , Optional startcolumn As Long = 1) As Range
