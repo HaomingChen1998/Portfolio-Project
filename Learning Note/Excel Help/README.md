@@ -56,22 +56,37 @@ Column  A           B          C
 https://www.youtube.com/watch?v=DpwAO5qnvAQ
 ```
 Option Explicit
+Sub Macro3()
+'
 
-' Description: Tests the custom made Find functions in this module.
-' Worksheet: DataJagged
-' YouTube video: https://youtu.be/DpwAO5qnvAQ
-' ExcelMacroMastery.com
-Sub TestFind()
-
-    ' Print the range address,last cell address, row and column to Immediate Window(Ctrl + G)
-    Debug.Print "Last row is " & FindLastRow(shJagged.Cells)
-    Debug.Print "Last column is " & FindLastcolumn(shJagged.Cells)
+'
     
-    Debug.Print "Last cell is: " & FindLastCell(shJagged.Cells).Address
-    Debug.Print "The full range is: " & BuildRangeToLastCell(shJagged.Cells).Address
+  ' Select last range
+    Dim lastCell As Range
+    Set lastCell = BuildRangeToLastCell(Sheets("Output").Cells, 9, 5)
+    lastCell.Select
+    
     
 End Sub
-
+Sub Macro4()
+'
+    
+  ' Select last row
+    Dim lastRow As Long, lastColumn As Long
+    lastRow = FindLastRow(Sheets("Output").Cells)
+    Sheets("Output").Rows(lastRow).Select
+    
+    
+End Sub
+Sub Macro5()
+'
+    
+  ' Select last column
+    Dim lastRow As Long, lastColumn As Long
+    lastColumn = FindLastcolumn(Sheets("Output").Cells)
+    Sheets("Output").Columns(lastColumn).Select
+    
+End Sub
 ' Description: Finds the last cell in a given range or worksheet.
 ' YouTube video: https://youtu.be/DpwAO5qnvAQ
 ' ExcelMacroMastery.com
@@ -144,6 +159,7 @@ Function BuildRangeToLastCell(rg As Range _
                             , FindLastCell(rg).Address)
 
 End Function
+
 ```
 
 ```
