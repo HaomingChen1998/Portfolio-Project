@@ -124,7 +124,7 @@ End Function
 
 ```
 
-Real Macro Example with the function
+Real Macro Example using the above function
 
 ```
 
