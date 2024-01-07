@@ -52,8 +52,7 @@ Column  A           B          C
 - to unit = "yr"
    
 # Macro
-Function itself to select column/rows/range by accounting for empty cell in between data.
-' Select range to last row/column  
+Function itself to select column/rows/range by accounting for empty cell in between data.  
 https://www.youtube.com/watch?v=DpwAO5qnvAQ
 ```
 
