@@ -139,7 +139,7 @@ Then type in   from .augsynth import *
 The dot (.) before augsynth signifies a relative import. This means Python will look for the augsynth module in the same directory as the __init__.py file.
 ```
 
-Share my folder to collaborate with others:
+# Share my folder to collaborate with others:
 1. Login to my github on browser
 2. Click on my profile -> Your repositories -> New
 3. Setting -> Collaborators -> Add People ; Invite people to my repo
