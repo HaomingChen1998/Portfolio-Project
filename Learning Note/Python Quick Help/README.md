@@ -138,19 +138,19 @@ How others can collaborate me:
 # Python Virtual Environment VSCode Syntax
 
 ```
-# Create a folder in desktop to store your virtual environment
+# Create a new folder in desktop for storing your virtual environment later
 
-# Select location to store your virtual environment from VSCODE: File -> Folder
+# Select a folder location (the folder you created above) to store your virtual environment from VSCODE: File -> Folder
 
-# Make sure this python version is downloaded first from https://www.python.org/downloads/.
+# Make sure you have already installed your desire python version which can be downloaded at https://www.python.org/downloads/
 
-# Create a virtual environment using the path of your desired python version
+# Create a virtual environment using the path of your desired python version, replace the python path accordingly.
 C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv .
 
-# Allow Activate.ps1 to run
+# Allow Activate.ps1 to run (executed from the VSCode terminal)
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-# Activate this environment
+# Activate this environment using "& [path to Activate.ps1 file from your virtual environment folder]"
 & c:/Users/Cody/Desktop/Default_Python/Scripts/Activate.ps1
 
 # Check virtual environment being used right now, the top python path has priority.
@@ -159,7 +159,15 @@ where.exe python
 # Install all the packages from requirements.txt
 pip install -r requirements.txt
 
-# If pip install didn't install in virtual environment folder, use the full path to the Python interpreter in your virtual environment to install.
+# Double check if the installed package versions are correct using:
+import pandas as pd
+import numpy as np
+import sys
+print(f'pandas version: {pd.__version__}')
+print(f'numpy version: {np.__version__}')
+print(f'Python version: {sys.version}')
+
+# If pip install didn't install in your virtual environment folder, use the full path to the Python interpreter in your virtual environment to install.
 # requirements.txt file should be located at the main folder.
 C:\Users\Cody\Desktop\Default_Python\Default_Python\Scripts\python.exe -m pip install -r requirements.txt
 
@@ -168,14 +176,28 @@ pip install pipreqs --force
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 ```
 
-Error Handling for Creating Virtual Environment:
+Error Handling for Using Virtual Environment:
 ```
-# If you downloaded package that has "setup.py" in root folder, you can install it by running
-python setup.py install
+# Fatal error in launcher: Unable to create process
+python -m pip install --upgrade --force-reinstall pip # Fatal error in launcher: Unable to create process
 
-if __name__ == "__main__"
-When you import a function, it will run the function at the same time. The above function prevents this.
-https://www.youtube.com/watch?v=o4XveLyI6YU
+# If unable to push:
+1. commit
+2. then push
+3. If not successful, then pull.
+4. Maybe conflict, If so, click on each file with conflict symbol, and then click on Conflict Merge Panel. Check the view's name to see if the one on the left or right is mine. Click on accept or ignore.
+5. Then push again.
+
+# If unable to discard all my changes
+1. Need to save all first.
+2. Menu button next to the source control
+3. Changes -> Discard all changes
+
+OR
+1. Stash the file that I wanna keep. (from the menu button next to the source control. Save in a safe place, and we gonna bring it back later)
+2. Discard the change for the remaining unwanted files
+3. Pop stash (bring back the file that I saved before back)
+
 
 # ModuleNotFoundError  
 add the following env entry to the launch.json configuration:
@@ -201,41 +223,8 @@ The dot (.) before augsynth signifies a relative import. This means Python will 
 ModuleNoteFoundError solution 2  
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Module_Error.png)
 
-```
-# Check Python and package version
-import pandas as pd
-import numpy as np
-import sys
 
-# Pandas 2.1.1
-# NumPy 1.26.0
-# Python 3.12.0
-print(f'pandas version: {pd.__version__}')
-print(f'numpy version: {np.__version__}')
-print(f'Python version: {sys.version}')
-```
 
-```
-# Troubleshoot:
-python -m pip install --upgrade --force-reinstall pip # Fatal error in launcher: Unable to create process
-
-If unable to push:
-1. commit
-2. then push
-3. If not successful, then pull.
-4. Maybe conflict, If so, click on each file with conflict symbol, and then click on Conflict Merge Panel. Check the view's name to see if the one on the left or right is mine. Click on accept or ignore.
-5. Then push again.
-
-If unable to discard all my changes
-1. Need to save all first.
-2. Menu button next to the source control
-3. Changes -> Discard all changes
-
-OR
-1. Stash the file that I wanna keep. (from the menu button next to the source control. Save in a safe place, and we gonna bring it back later)
-2. Discard the change for the remaining unwanted files
-3. Pop stash (bring back the file that I saved before back)
-```
 
 # Python Github Package Installation
 
