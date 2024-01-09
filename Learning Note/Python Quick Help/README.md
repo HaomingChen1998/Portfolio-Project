@@ -139,19 +139,37 @@ How others can collaborate me:
 
 ```
 # Create a folder in desktop to store your virtual environment
+
 # Select location to store your virtual environment from VSCODE: File -> Folder
+
 # Make sure this python version is downloaded first from https://www.python.org/downloads/.
-C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv . # Create a virtual environment
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser # Allow Activate.ps1 to run
-& c:/Users/Cody/Desktop/Default_Python/Scripts/Activate.ps1  # now activate this environment
-where.exe python # check virtual environment being used right now, the top python path has priority.
-.\pip.exe install -r ../requirements.txt
-pip install -r requirements.txt # Installs all the packages from requirements.txt
+
+# Create a virtual environment using the path of your desired python version
+C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv .
+
+# Allow Activate.ps1 to run
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# Activate this environment
+& c:/Users/Cody/Desktop/Default_Python/Scripts/Activate.ps1
+
+# Check virtual environment being used right now, the top python path has priority.
+where.exe python
+
+# Install all the packages from requirements.txt
+pip install -r requirements.txt
+
 # If pip install didn't install in virtual environment folder, use the full path to the Python interpreter in your virtual environment to install.
 # requirements.txt file should be located at the main folder.
 C:\Users\Cody\Desktop\Default_Python\Default_Python\Scripts\python.exe -m pip install -r requirements.txt
-pip install pipreqs --force# Genereate requirements.txt file with only a few selected packages. You need to import the packages you want to include first.
+
+# Genereate requirements.txt file with only a few selected packages. You need to import the packages you want to include first.
+pip install pipreqs --force
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
+```
+
+Error Handling for Creating Virtual Environment:
+```
 # If you downloaded package that has "setup.py" in root folder, you can install it by running
 python setup.py install
 
@@ -222,8 +240,14 @@ OR
 # Python Github Package Installation
 
 ```
-pip install "git+https://github.com/google/matched_markets.git" # git+the link you get from the github main page -> green "Code" button -> copy the https link.
-python setup.py install # Download the setup.py file and place it to the environment folder.
+# git+the link you get from the github main page -> green "Code" button -> copy the https link.
+pip install "git+https://github.com/google/matched_markets.git"
+
+# Download the setup.py file and place it to the environment folder.
+python setup.py install
+
+# If you downloaded package that has "setup.py" in root folder, you can install it by running
+python setup.py install
 ```
 
 # Python Debug
