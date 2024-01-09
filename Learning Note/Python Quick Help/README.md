@@ -174,7 +174,7 @@ pip install pipreqs --force
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 ```
 
-Error Handling for Using Virtual Environment:
+**Error Handling for Using Virtual Environment:**
 ```
 # Fatal error in launcher: Unable to create process
 python -m pip install --upgrade --force-reinstall pip # Fatal error in launcher: Unable to create process
