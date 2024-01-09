@@ -139,14 +139,27 @@ Then type in   from .augsynth import *
 The dot (.) before augsynth signifies a relative import. This means Python will look for the augsynth module in the same directory as the __init__.py file.
 ```
 
-Collaborate with other users by sharing my work with other.
+Share my folder to collaborate with others:
 1. Login to my github on browser
 2. Click on my profile -> Your repositories -> New
 3. Setting -> Collaborators -> Add People ; Invite people to my repo
 4. Open terminal to run the following code:
 ```
-
+cd [Folder_Path]
+git init ; Turn current folder into a git repo (a folder a git can track)
+git branch -M main ;rename current branch to main
+git remote add origin https://github.com/[username]/[repo_name].git ;Ex: haomingchen1998, AutoHotkey.git
+git remote -v ; verify if the above remote url is added locally.
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git add . ; Add all the files from that folder locally to GitHub.
+git commit -m "your_message_here"
+git push -u origin main ; if error, refer back to "git remote -v" code line
 ```
+How others can collaborate me:
+1. Go to github -> next to profile icon, click on inbox icon.
+2. Accept the invite.
+3. Then I can download as zip -> unzip -> open that folder using VSCODE.
 
 ```
 ModuleNoteFoundError solution 2  
