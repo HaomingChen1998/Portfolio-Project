@@ -130,7 +130,7 @@ git push -u origin main
 How others can collaborate me:
 1. Go to github -> next to profile icon, click on inbox icon.
 2. Accept the invite.
-3. Then I can download as zip -> unzip -> open that folder using VSCODE. Alternatively you can clone.
+3. Then I can download as zip -> unzip -> open that folder using VSCode. Alternatively you can clone.
 
 
 
