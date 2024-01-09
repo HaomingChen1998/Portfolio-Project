@@ -133,7 +133,7 @@ How others can collaborate me:
 3. Then I can download as zip -> unzip -> open that folder using VSCODE. Alternatively you can clone.
 
 
-```
+
 
 # Python Environment VScode Syntax
 
