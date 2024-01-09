@@ -147,14 +147,16 @@ ModuleNoteFoundError solution 2
 3. Setting -> Collaborators -> Add People # Invite people to my repo
 4. Open terminal to run the following code:
 ```
+# Change directory to the folder that I want to share
 cd [Folder_Path]
-# Turn current folder into a git repo (a folder a git can track)
+
+# Turn current folder into a git repo (a folder that git can track)
 git init
 
 # rename current branch to main
 git branch -M main
 
-# Ex: haomingchen1998, AutoHotkey.git
+# Ex: username = haomingchen1998, repo_name = AutoHotkey.git
 git remote add origin https://github.com/[username]/[repo_name].git
 
 # verify if the above remote url is added locally.
