@@ -93,7 +93,7 @@ sns.heatmap(df_corr, annot=True)
 plt.show()
 ```
 
-# Share my folder to collaborate with others:
+# Git: Share my folder to collaborate with others:
 1. Login to my github on browser
 2. Click on my profile -> Your repositories -> New
 3. Setting -> Collaborators -> Add People # Invite people to my repo
