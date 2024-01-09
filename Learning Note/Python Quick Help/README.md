@@ -159,13 +159,11 @@ where.exe python
 # Install all the packages from requirements.txt
 pip install -r requirements.txt
 
-# Double check if the installed package versions are correct using:
-import pandas as pd
-import numpy as np
-import sys
-print(f'pandas version: {pd.__version__}')
-print(f'numpy version: {np.__version__}')
-print(f'Python version: {sys.version}')
+# Check what packages are installed
+pip list
+
+# Check if a specific package is installed
+pip show [package_name]
 
 # If pip install didn't install in your virtual environment folder, use the full path to the Python interpreter in your virtual environment to install.
 # requirements.txt file should be located at the main folder.
