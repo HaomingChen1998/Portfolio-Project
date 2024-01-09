@@ -138,6 +138,8 @@ Create an __init__.py file in the same folder as the module you can't find.
 Then type in   from .augsynth import *
 The dot (.) before augsynth signifies a relative import. This means Python will look for the augsynth module in the same directory as the __init__.py file.
 ```
+ModuleNoteFoundError solution 2  
+![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Module_Error.png)
 
 # Share my folder to collaborate with others:
 1. Login to my github on browser
@@ -161,11 +163,7 @@ How others can collaborate me:
 2. Accept the invite.
 3. Then I can download as zip -> unzip -> open that folder using VSCODE.
 
-```
-ModuleNoteFoundError solution 2  
-![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Module_Error.png)
 
-```
 ```
 # Check Python and package version
 import pandas as pd
