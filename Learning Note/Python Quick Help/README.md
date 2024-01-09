@@ -93,6 +93,48 @@ sns.heatmap(df_corr, annot=True)
 plt.show()
 ```
 
+# Share my folder to collaborate with others:
+1. Login to my github on browser
+2. Click on my profile -> Your repositories -> New
+3. Setting -> Collaborators -> Add People # Invite people to my repo
+4. Open terminal to run the following code:
+```
+# Change directory to the folder that I want to share
+cd [Folder_Path]
+
+# Turn current folder into a git repo (a folder that git can track)
+git init
+
+# rename current branch to main
+git branch -M main
+
+# Ex: username = haomingchen1998, repo_name = AutoHotkey.git
+git remote add origin https://github.com/[username]/[repo_name].git
+
+# verify if the above remote url is added locally.
+git remote -v
+
+# Input your info
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+# Add all the files from that folder locally to GitHub.
+git add .
+
+# Confirm your changes
+git commit -m "your_message_here"
+
+# if error, refer back to "git remote -v" code line
+git push -u origin main
+```
+How others can collaborate me:
+1. Go to github -> next to profile icon, click on inbox icon.
+2. Accept the invite.
+3. Then I can download as zip -> unzip -> open that folder using VSCODE. Alternatively you can clone.
+
+
+```
+
 # Python Environment VScode Syntax
 
 ```
@@ -141,47 +183,7 @@ The dot (.) before augsynth signifies a relative import. This means Python will 
 ModuleNoteFoundError solution 2  
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Module_Error.png)
 
-# Share my folder to collaborate with others:
-1. Login to my github on browser
-2. Click on my profile -> Your repositories -> New
-3. Setting -> Collaborators -> Add People # Invite people to my repo
-4. Open terminal to run the following code:
-```
-# Change directory to the folder that I want to share
-cd [Folder_Path]
 
-# Turn current folder into a git repo (a folder that git can track)
-git init
-
-# rename current branch to main
-git branch -M main
-
-# Ex: username = haomingchen1998, repo_name = AutoHotkey.git
-git remote add origin https://github.com/[username]/[repo_name].git
-
-# verify if the above remote url is added locally.
-git remote -v
-
-# Input your info
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-
-# Add all the files from that folder locally to GitHub.
-git add .
-
-# Confirm your changes
-git commit -m "your_message_here"
-
-# if error, refer back to "git remote -v" code line
-git push -u origin main
-```
-How others can collaborate me:
-1. Go to github -> next to profile icon, click on inbox icon.
-2. Accept the invite.
-3. Then I can download as zip -> unzip -> open that folder using VSCODE. Alternatively you can clone.
-
-
-```
 # Check Python and package version
 import pandas as pd
 import numpy as np
