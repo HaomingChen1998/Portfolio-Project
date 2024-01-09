@@ -169,7 +169,7 @@ git config --global user.name "Your Name"
 # Add all the files from that folder locally to GitHub.
 git add .
 
-# Confirmed your change
+# Confirm your changes
 git commit -m "your_message_here"
 
 # if error, refer back to "git remote -v" code line
