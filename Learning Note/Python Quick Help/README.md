@@ -148,15 +148,29 @@ ModuleNoteFoundError solution 2
 4. Open terminal to run the following code:
 ```
 cd [Folder_Path]
-git init ; Turn current folder into a git repo (a folder a git can track)
-git branch -M main ;rename current branch to main
-git remote add origin https://github.com/[username]/[repo_name].git ;Ex: haomingchen1998, AutoHotkey.git
-git remote -v ; verify if the above remote url is added locally.
+#Turn current folder into a git repo (a folder a git can track)
+git init
+
+n #rename current branch to main
+git branch -M main
+
+#Ex: haomingchen1998, AutoHotkey.git
+git remote add origin https://github.com/[username]/[repo_name].git
+
+#verify if the above remote url is added locally.
+git remote -v
+
 git config --global user.email "you@example.com"
+
 git config --global user.name "Your Name"
-git add . ; Add all the files from that folder locally to GitHub.
+
+#Add all the files from that folder locally to GitHub.
+git add .
+
 git commit -m "your_message_here"
-git push -u origin main ; if error, refer back to "git remote -v" code line
+
+#if error, refer back to "git remote -v" code line
+git push -u origin main
 ```
 How others can collaborate me:
 1. Go to github -> next to profile icon, click on inbox icon.
