@@ -166,6 +166,7 @@ ModuleNoteFoundError solution 2
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Module_Error.png)
 
 ```
+```
 # Check Python and package version
 import pandas as pd
 import numpy as np
