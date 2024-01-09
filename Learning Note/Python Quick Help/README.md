@@ -162,13 +162,14 @@ git remote add origin https://github.com/[username]/[repo_name].git
 # verify if the above remote url is added locally.
 git remote -v
 
+# Input your info
 git config --global user.email "you@example.com"
-
 git config --global user.name "Your Name"
 
 # Add all the files from that folder locally to GitHub.
 git add .
 
+# Confirmed your change
 git commit -m "your_message_here"
 
 # if error, refer back to "git remote -v" code line
@@ -177,7 +178,7 @@ git push -u origin main
 How others can collaborate me:
 1. Go to github -> next to profile icon, click on inbox icon.
 2. Accept the invite.
-3. Then I can download as zip -> unzip -> open that folder using VSCODE.
+3. Then I can download as zip -> unzip -> open that folder using VSCODE. Alternatively you can clone.
 
 
 ```
