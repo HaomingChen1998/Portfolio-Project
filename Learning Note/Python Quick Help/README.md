@@ -135,7 +135,7 @@ How others can collaborate me:
 
 
 
-# Python Environment VScode Syntax
+# Python Virtual Environment VSCode Syntax
 
 ```
 # Create a folder in desktop to store your virtual environment
