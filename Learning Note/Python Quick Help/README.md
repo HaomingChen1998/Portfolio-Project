@@ -137,7 +137,7 @@ add the following env entry to the launch.json configuration:
 Create an __init__.py file in the same folder as the module you can't find.
 Then type in   from .augsynth import *
 The dot (.) before augsynth signifies a relative import. This means Python will look for the augsynth module in the same directory as the __init__.py file.
-
+```
 
 Collaborate with other users by sharing my work with other.
 1. Login to my github on browser
