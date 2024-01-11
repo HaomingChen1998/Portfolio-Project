@@ -173,6 +173,11 @@ C:\Users\Cody\Desktop\Default_Python\Default_Python\Scripts\python.exe -m pip in
 pip install pipreqs --force
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 ```
+# Python Virtual Environment VSCode Shorcut:
+```
+# Comment out multiple lines with #
+Ctrl L, Ctrl /
+```
 
 **Error Handling for Using Virtual Environment:**
 ```
