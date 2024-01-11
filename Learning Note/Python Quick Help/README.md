@@ -185,6 +185,7 @@ python -m pip install --upgrade --force-reinstall pip # Fatal error in launcher:
 3. If not successful, then pull.
 4. Maybe conflict, If so, click on each file with conflict symbol, and then click on Conflict Merge Panel. Check the view's name to see if the one on the left or right is mine. Click on accept or ignore.
 5. Then push again.
+6. git push --force  ; You can also try force push
 
 # If unable to discard all my changes
 1. Need to save all first.
