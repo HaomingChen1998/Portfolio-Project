@@ -133,7 +133,11 @@ How others can collaborate me:
 3. Then I can download as zip -> unzip -> open that folder using VSCode. Alternatively you can clone.
 
 
-
+# Python Virtual Environment VSCode Shorcut:
+```
+# Comment out multiple lines with #
+Ctrl L, Ctrl /
+```
 
 # Python Virtual Environment VSCode Syntax
 
@@ -172,11 +176,6 @@ C:\Users\Cody\Desktop\Default_Python\Default_Python\Scripts\python.exe -m pip in
 # Genereate requirements.txt file with only a few selected packages. You need to import the packages you want to include first.
 pip install pipreqs --force
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
-```
-# Python Virtual Environment VSCode Shorcut:
-```
-# Comment out multiple lines with #
-Ctrl L, Ctrl /
 ```
 
 **Error Handling for Using Virtual Environment:**
@@ -226,8 +225,6 @@ The dot (.) before augsynth signifies a relative import. This means Python will 
 ```
 ModuleNoteFoundError solution 2  
 ![App Screenshot](https://github.com/HaomingChen1998/Portfolio-Project/blob/main/Learning%20Note/Photo/Module_Error.png)
-
-
 
 
 # Python Github Package Installation
