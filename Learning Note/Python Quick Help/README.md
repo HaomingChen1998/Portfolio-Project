@@ -47,6 +47,39 @@ with open('Example.csv', 'w', newline = '') as csvfile:
     my_writer.writerow(input_variable)
 
 
+# Create a dataframe with just rows (no column names)
+# Specify each row as a list
+data = [
+    ['atlanta', 'chicago', 'las vegas'],
+    ['austin', 'oakland', 'oklahoma city'],
+    ['baltimore', 'philadelphia', 'reno'],
+    ['baton rouge', 'cincinnati', 'portland'],
+    ['boston', 'jacksonville', 'new orleans']
+]
+data = pd.DataFrame(data) # Create DataFrame using the list of lists
+It will look like below:
+             0             1              2
+0      atlanta       chicago      las vegas
+1       austin       oakland  oklahoma city
+2    baltimore  philadelphia           reno
+3  baton rouge    cincinnati       portland
+4       boston  jacksonville    new orleans
+
+
+# Convert each row into a set
+data_set = pd.DataFrame(data).apply(lambda x: pd.Series(x), axis=1)
+
+# If include_markets_set is not a subset of any set in BestMarkets_aux_set, then error.
+if not any(BestMarkets_aux_set.apply(lambda x: include_markets_set1.issubset(x))):
+    message = (
+        f"Error: The following market combination from your 'include_markets' is not available:\n\n"
+        f"{include_markets_set1}\n\n"
+        "Available combinations are:\n"
+        f"{BestMarkets_aux_set}."
+    )
+    logger.error(message)
+    raise ValueError(message)
+
 ```
 # Visualization with Pandas
 There are several plot types built into pandas; most of them are statistical by nature:  
