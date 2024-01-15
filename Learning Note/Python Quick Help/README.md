@@ -163,6 +163,12 @@ where.exe python
 # Install all the packages from requirements.txt
 pip install -r requirements.txt
 
+# Uninstall all the packages from requirements.txt
+pip uninstall -r requirements.txt -y
+
+# Store all the pip packages in requirements.txt
+pip freeze > requirements.txt
+
 # Check what packages are installed
 pip list
 
