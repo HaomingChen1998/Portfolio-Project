@@ -215,6 +215,10 @@ C:\Users\Cody\Desktop\Default_Python\Default_Python\Scripts\python.exe -m pip in
 # Genereate requirements.txt file with only a few selected packages. You need to import the packages you want to include first.
 pip install pipreqs --force
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
+
+# Revert to previous Git Version (revert locally, then push out as a new commit)
+git revert HEAD
+git push origin main
 ```
 
 **Error Handling for Using Virtual Environment:**
