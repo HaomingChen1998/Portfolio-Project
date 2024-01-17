@@ -220,6 +220,10 @@ pip freeze > requirements.txt # Generate requirements.txt file that includes all
 git revert HEAD
 git push origin main
 
+# Push a single file
+git commit -m 'your comment' path/to/your/file.txt
+then push to the branch
+
 # Creates a new branch and push to that branch
 git branch newBranch master # Creates a new branch called "newBranch" base on the master branch.
 git checkout newBranch # Switches to "newBranch" branch
