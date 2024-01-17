@@ -219,6 +219,11 @@ pip freeze > requirements.txt # Generate requirements.txt file that includes all
 # Revert to previous Git Version (revert locally, then push out as a new commit)
 git revert HEAD
 git push origin main
+
+# Creates a new branch and push to that branch
+git branch newBranch master # Creates a new branch called "newBranch" base on the master branch.
+git checkout newBranch # Switches to "newBranch" branch
+git push -u origin newBranch # Pushes to that branch
 ```
 
 **Error Handling for Using Virtual Environment:**
