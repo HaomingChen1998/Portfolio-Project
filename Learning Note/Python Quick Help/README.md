@@ -126,6 +126,13 @@ sns.heatmap(df_corr, annot=True)
 plt.show()
 ```
 
+
+# VSCode Shorcut:
+```
+# Comment out multiple lines with #
+Ctrl L, Ctrl /
+```
+
 # Git: Share my folder to collaborate with others:
 1. Login to my github on browser
 2. Click on my profile -> Your repositories -> New
@@ -164,13 +171,6 @@ How others can collaborate me:
 1. Go to github -> next to profile icon, click on inbox icon.
 2. Accept the invite.
 3. Then I can download as zip -> unzip -> open that folder using VSCode. Alternatively you can clone.
-
-
-# Python Virtual Environment VSCode Shorcut:
-```
-# Comment out multiple lines with #
-Ctrl L, Ctrl /
-```
 
 # Python Virtual Environment VSCode Syntax
 
