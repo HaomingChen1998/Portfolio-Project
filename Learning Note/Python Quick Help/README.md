@@ -217,14 +217,8 @@ pip install pipreqs --force
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 
 # Revert to previous Git Version (revert locally, then push out as a new commit)
-git revert HEAD
+git revert HEAD # You can do HEAD~2 for the one before last.
 git push origin main
-
-# Rewinds back 5 commits but keeps changes in the working directory
-git reset HEAD~5
-
-# Rewinds back 3 commits and deletes changes
-git reset --hard HEAD~3
 
 # Push a single file
 git commit -m 'your comment' path/to/your/file.txt
