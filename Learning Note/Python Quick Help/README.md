@@ -220,6 +220,12 @@ pip freeze > requirements.txt # Generate requirements.txt file that includes all
 git revert HEAD
 git push origin main
 
+# Rewinds back 5 commits but keeps changes in the working directory
+git reset HEAD~5
+
+# Rewinds back 3 commits and deletes changes
+git reset --hard HEAD~3
+
 # Push a single file
 git commit -m 'your comment' path/to/your/file.txt
 then push to the branch
