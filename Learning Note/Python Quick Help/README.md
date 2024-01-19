@@ -220,6 +220,8 @@ pip freeze > requirements.txt # Generate requirements.txt file that includes all
 git revert HEAD -m "Your custom commit message"
 git push origin main
 
+# Get rid of all Outgoing/Incoming changes
+git reset --hard origin/development 
 
 # Push a single file
 git commit -m 'your comment' path/to/your/file.txt
