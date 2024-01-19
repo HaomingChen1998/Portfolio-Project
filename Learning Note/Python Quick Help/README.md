@@ -354,7 +354,9 @@ It detects mouse movement every 5 seconds, if no movement is detected within 5 s
 2. Install all the required packages from requirements.txt with below code in powershell / VSCode terminal:
 pip install -r requirements.txt
 3. Then run the code inside stay_awake.py file.
-4. If you want to launch the script on system startup, you can modify the path from awake.bat file, then place it inside the windows startup folder by doing Win+R, shell:startup.
+4. [Optional] Launching the script on system startup is also possible if you follow below steps:
+- Modify the path from awake.bat file
+- Place it inside the windows startup folder by doing Win+R then type shell:startup
 ```
 
 # Building Local GPT4 for free using Python
