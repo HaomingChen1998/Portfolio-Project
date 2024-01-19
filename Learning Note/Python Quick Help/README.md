@@ -220,6 +220,11 @@ pip freeze > requirements.txt # Generate requirements.txt file that includes all
 git revert HEAD~1
 git push origin main
 
+# Force Revert (Local files will be deleted forcefully)
+git reset --hard HEAD~3 # Revert back to 3rd commits locally
+git push -f origin main # Force push that local update to GitHub
+
+
 # Get rid of all Outgoing/Incoming changes
 git reset --hard origin/development 
 
