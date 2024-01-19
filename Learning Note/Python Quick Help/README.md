@@ -368,7 +368,7 @@ It detects mouse movement every 5 seconds, if no movement is detected within 5 s
 2. Install all the required packages from requirements.txt with below code in powershell / VSCode terminal:
 pip install -r requirements.txt
 3. Then run the code inside stay_awake.py file.
----------------------------------------------------------[Optional Steps to automate it further]------------------------------------------------------------------------------------------------------
+----------------------------------------[Optional Steps to automate it further]------------------------------------------------------------------------------------------------------
 - Launching the script on system startup is also possible if you follow below steps:
 - Place the stay_awake.bat file in the virtual environment main folder (it will loops through all files inside this main folder to look for activate.bat and stay_awake.py file paths).
 - Make sure both the activate.bat and stay_awake.py files are both placed within this virtual folder as well, but these two files can be placed anywhere in this folder.
