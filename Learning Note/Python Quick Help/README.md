@@ -347,8 +347,8 @@ if __name__=="__main__": # When a function gets imported, it would also be execu
 pause
 ```
 
-# Prevent Computer from Going to Sleep 
-
+# Prevent Computer from Going to Sleep  
+It detects mouse movement every 5 seconds, if no movement is detected within 5 seconds, then it will press Num Key. If movement is detected within 5 seconds, then no action will be performed.
 ```
 1. Download stay_awake folder.
 2. Install all the required packages from requirements.txt with below code in powershell / VSCode terminal:
