@@ -216,11 +216,11 @@ C:\Users\Cody\Desktop\Default_Python\Default_Python\Scripts\python.exe -m pip in
 pip install pipreqs --force
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 
-# Revert to previous Git Version (revert locally, then push out as a new commit)
+# Revert to a Previous Git Version (revert locally, then push out as a new commit [no commits are deleted])
 git revert HEAD~1
 git push origin main
 
-# Force Revert (Local files will be deleted forcefully)
+# Reset to a Previous Git Version (Local files will be deleted forcefully, commits after the reverted commit will be deleted)
 git reset --hard HEAD~3 # Revert back to 3rd commits locally
 git push -f origin main # Force push that local update to GitHub
 
