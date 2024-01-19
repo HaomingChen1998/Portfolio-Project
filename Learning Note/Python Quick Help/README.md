@@ -345,6 +345,11 @@ if __name__=="__main__": # When a function gets imported, it would also be execu
 # Run Python Code from CMD
 
 ```
+# Activate Virtual Environment
+cd C:\Users\codchen1\Desktop\Main.Py\Scripts\
+call activate.bat
+
+# Run a python file using a specific virtual environment
 @echo off
 "C:\Users\codchen1\Desktop\Default_Python\Scripts\python.exe" -u "C:\Users\codchen1\Desktop\Main.Py\date_cal.py"
 pause
