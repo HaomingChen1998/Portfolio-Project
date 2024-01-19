@@ -347,14 +347,14 @@ if __name__=="__main__": # When a function gets imported, it would also be execu
 pause
 ```
 
-# Prevent Computer from Sleeping  
-https://github.com/singhsidhukuldeep/stay-awake
+# Prevent Computer from Going to Sleep 
 
 ```
-pip install stay-awake
-- Make sure to replace the __init__.py from C:\Users\codchen1\Desktop\Main.Py\Lib\site-packages\stay-awake\__init__.py, so it sends Num Key press instead of mouse movement.
-python -m stay-awake
-- Then put awake.bat file in the windows startup folder by doing Win+R, shell:startup
+1. Download stay_awake folder.
+2. Install all the required packages from requirements.txt with below code in powershell / VSCode terminal:
+- pip install -r requirements.txt
+3. Then run the code inside stay_awake.py file.
+4. If you want to launch the script on system startup, you can modify the path from awake.bat file, then place it inside the windows startup folder by doing Win+R, shell:startup.
 ```
 
 # Building Local GPT4 for free using Python
