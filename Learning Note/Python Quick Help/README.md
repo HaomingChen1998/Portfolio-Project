@@ -217,7 +217,7 @@ pip install pipreqs --force
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 
 # Revert to previous Git Version (revert locally, then push out as a new commit)
-git revert HEAD -m "Your custom commit message"
+git revert HEAD~1
 git push origin main
 
 # Get rid of all Outgoing/Incoming changes
