@@ -378,7 +378,8 @@ Launching the script on system startup is also possible if you follow below step
 2. Make sure both the activate.bat and stay_awake.py files are both placed within this virtual folder
 (these two files can be placed anywhere in this folder)
 
-3. Create a shortcut of this stay_awake.bat file, then place it inside the windows startup folder by doing Win+R then type shell:startup
+3. Create a shortcut of this stay_awake.bat file, then place it inside the windows startup folder by doing:
+Win+R then type shell:startup
 ```
 
 # Building Local GPT4 for free using Python
