@@ -349,10 +349,16 @@ if __name__=="__main__": # When a function gets imported, it would also be execu
 cd C:\Users\codchen1\Desktop\Main.Py\Scripts\
 call activate.bat
 
-# Run a python file using a specific virtual environment
-@echo off
+# Activate Virtual Environment (Method 2)
+"C:\Users\codchen1\Desktop\Main.Py\Scripts\activate.bat"
+
+# Run a python file using a specific virtual environment (Make sure activate the environment first)
 "C:\Users\codchen1\Desktop\Default_Python\Scripts\python.exe" -u "C:\Users\codchen1\Desktop\Main.Py\date_cal.py"
-pause
+
+pause # See the output before terminal closes
+& runs the second command on the line whether the first command comes back successfully or not.
+&& runs the second command on the line when the first command comes back successfully (i.e. errorlevel == 0).
+|| runs the second command when the first command is unsuccessful (i.e. errorlevel != 0).
 ```
 
 # Prevent Computer from Going to Sleep  
@@ -363,8 +369,9 @@ It detects mouse movement every 5 seconds, if no movement is detected within 5 s
 pip install -r requirements.txt
 3. Then run the code inside stay_awake.py file.
 4. [Optional] Launching the script on system startup is also possible if you follow below steps:
-- Modify the path from awake.bat file
-- Place it inside the windows startup folder by doing Win+R then type shell:startup
+- Place the stay_awake.bat file in the virtual environment main folder (it will loops through all files inside this main folder to look for activate.bat and stay_awake.py file paths).
+- Make sure both the activate.bat and stay_awake.py files are both placed within this virtual folder as well, but these two files can be placed anywhere in this folder.
+- Create a shortcut of this stay_awake.bat file, then place it inside the windows startup folder by doing Win+R then type shell:startup
 ```
 
 # Building Local GPT4 for free using Python
