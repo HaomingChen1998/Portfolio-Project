@@ -216,6 +216,9 @@ C:\Users\Cody\Desktop\Default_Python\Default_Python\Scripts\python.exe -m pip in
 pip install pipreqs --force
 pip freeze > requirements.txt # Generate requirements.txt file that includes all packages installed.
 
+# Revert to a Previous Git Version (revert locally only)
+git checkout -f HEAD~1
+
 # Revert to a Previous Git Version (revert locally, then push out as a new commit [no commits are deleted])
 git revert HEAD~1
 git push origin main
