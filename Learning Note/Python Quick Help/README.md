@@ -369,7 +369,7 @@ It detects mouse movement every 5 seconds, if no movement is detected within 5 s
 pip install -r requirements.txt
 3. Then run the code inside stay_awake.py file.
 
-----------------------------------------[Optional Steps to automate it further]------------------------------------------------------------------------------------------------------
+----------------------------------------[Optional Steps for Further Automation]------------------------------------------------------------------------------------------------------
 Launching the script on system startup is also possible if you follow below steps:
 
 1. Place the stay_awake.bat file in the virtual environment main folder
