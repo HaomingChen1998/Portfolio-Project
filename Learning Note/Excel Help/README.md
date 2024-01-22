@@ -28,6 +28,14 @@
 1. Absolute Reference: when you drag down the formula, it locks on to a specific value, instead of looking for the value in next row to do the calculation.
 2. Relative Reference: when you drag down the formula, it looks for the value in next row to do the calculation.
 
+# Resize a table in excel, but receive error: can't move cells in a filtered range or table:
+1. Remove the table first
+- Click anywhere inside the table to activate it.
+- Go to the 'Table Design' tab in the Excel toolbar.
+- Click on the 'Convert to Range' button.
+2. Create this table with a new range again
+- Insert -> Table
+
 # Record Macro
 1. View -> Macros -> Record Macro [Make sure Use Relative References is checked]
 2. When done recording -> View -> Macros -> Stop Recording
