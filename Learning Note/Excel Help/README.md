@@ -28,7 +28,7 @@
 1. Absolute Reference: when you drag down the formula, it locks on to a specific value, instead of looking for the value in next row to do the calculation.
 2. Relative Reference: when you drag down the formula, it looks for the value in next row to do the calculation.
 
-# Resize a table in excel, but receive error: can't move cells in a filtered range or table:
+# Resize Table Error (Can't move cells in a filtered range or table):
 1. Remove the table first
 - Click anywhere inside the table to activate it.
 - Go to the 'Table Design' tab in the Excel toolbar.
