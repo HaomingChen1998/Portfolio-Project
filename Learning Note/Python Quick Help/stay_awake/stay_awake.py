@@ -25,7 +25,7 @@ try:
     except Exception as exp:
         pass
     prevousLocation = None
-    print(f'>> Wait time set to: {waitTime} minutes')
+    print(f'>> Wait time set to: {waitTime*5} seconds')
 except Exception as exp:
     print (f'>><< Error: {exp}')
     print(errorMessage)
