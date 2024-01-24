@@ -131,6 +131,8 @@ plt.show()
 ```
 # Comment out multiple lines with #
 Ctrl L, Ctrl /
+# Select Multiple Keywords and Modify them all at once
+Select Text -> Ctrl + D
 ```
 
 # Git: Share my folder to collaborate with others:
