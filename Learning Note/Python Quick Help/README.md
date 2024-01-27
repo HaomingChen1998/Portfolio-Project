@@ -127,7 +127,7 @@ plt.show()
 ```
 
 
-# VSCode Shorcut:
+# VSCode Shortcut:
 ```
 # Comment out multiple lines with #
 Ctrl L, Ctrl /
