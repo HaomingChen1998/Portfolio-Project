@@ -18,11 +18,17 @@ a “view through” typically refers to a viewer watching an entire video ad wi
 
 <h1 align="center">Workerbook Knowlege</h1>
   
-**<small>Percentile Calculation**<small>  
+**<small>25th, 50th, & 75th Percentiles**<small>  
 
 1. Percentiles were calculated using OUTPUT tab which contains the new data, it calculates the percentile by each row, from column U to AD (the previous weekend friday date).
 2. For this week's data, the 25th percentile is 354 means : For this week's data, 25% of the data would fall below the value 354 (ascending order)
 
+**<small>v25, v50, & v75**<small>  
+1. These v values are calculated by most_recent_week_data/corresponding_percentile.
+- Ex: v25 is calculated by most_recent_week_data/25th percentile
+
+1. Percentiles were calculated using OUTPUT tab which contains the new data, it calculates the percentile by each row, from column U to AD (the previous weekend friday date).
+2. For this week's data, the 25th percentile is 354 means : For this week's data, 25% of the data would fall below the value 354 (ascending order)
 
 <h1 align="center">Data Anomaly Check</h1>
 
