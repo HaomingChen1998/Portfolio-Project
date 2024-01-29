@@ -16,7 +16,7 @@ VCR = (View-throughs / Impressions) * 100
 a “view through” typically refers to a viewer watching an entire video ad without skipping it
 
 
-<h1 align="center">Media Math</h1>
+<h1 align="center">Workerbook Knowlege</h1>
   
 **<small>Percentile Calculation**<small>  
 
