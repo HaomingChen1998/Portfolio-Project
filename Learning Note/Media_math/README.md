@@ -17,10 +17,6 @@ a “view through” typically refers to a viewer watching an entire video ad wi
 
 <h1 align="center">Data Anomaly Check</h1>
 
-**<small>Most recent data is significantly higher/lower 25th, 50th, and 75th percentile**<small>  
-1. If relevant metrics are small, that may indiciate the ad is still in QA (Making sure the quality is good before release to the public)
-- Ex: When most recent data for CTR is significantly higher than all percentiles: Check relevant metrics (clicks & Impression), if they are low, might indiciate QA.
-
 **<small>When does percentile indicate non-issue?**<small>  
 When most recent week's data is significantly:
 1. Higher than 25th & 50th, but lower than 75th. (still within normalized range)
