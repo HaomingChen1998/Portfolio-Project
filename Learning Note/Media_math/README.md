@@ -24,7 +24,7 @@ a “view through” typically refers to a viewer watching an entire video ad wi
 2. For this week's data, the 25th percentile is 354 means : For this week's data, 25% of the data would fall below the value 354 (ascending order)
 
 **<small>v25, v50, & v75**<small>  
-1. These v values are calculated by most_recent_week_data/corresponding_percentile.
+1. These v values are calculated by most_recent_week_data/corresponding_percentile. Condition formatted with midpoint as 50 (yellow), Minimum as lowest value(red), maximum as highest value(green)
 - Ex: v25 is calculated by most_recent_week_data/25th percentile
 
 1. When they are all dark green, it means that the most recent week's data are significantly above the 25th, 50th, & 75th percentile, indicating outlier.
