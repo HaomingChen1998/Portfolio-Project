@@ -25,7 +25,7 @@ a “view through” typically refers to a viewer watching an entire video ad wi
 When most recent week's data is significantly:
 1. Higher than 25th & 50th, but lower than 75th. (still within normalized range)
 2. Lower than 75th & 50th, but higher than 25th.
-3. If all higher/lower, but relevant metrics are small numbers, that may indiciate the ad is still in QA (Making sure the quality is good before release to the public)
+3. If all higher/lower, but relevant metrics from most recent week are small numbers, that may indiciate the ad is still in QA (Making sure the quality is good before release to the public)
 - Ex: When most recent data for CTR is significantly higher than all percentiles: Check relevant metrics (clicks & Impression), if they are low, might indiciate QA.
 4. Higher than 25th & 50th,  75th. (still within normalized range)
 5. Lower than 75th & 50th, but higher than 25th.
