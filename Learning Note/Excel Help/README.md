@@ -58,6 +58,13 @@ Column  A           B          C
 - number = cells to be converted
 - from_unit = "day"
 - to unit = "yr"
+- 
+# Week End Date Calculation (Assume 1st row of the date column is D2
+1. (Sat-Fri)
+   =D2+(7-WEEKDAY(D2,16))
+3. (Mon-Sun)
+   =D2+(7-WEEKDAY(D2,2))
+
    
 # Macro
 Function itself to select column/rows/range by accounting for empty cell in between data.  
