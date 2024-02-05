@@ -60,9 +60,9 @@ Column  A           B          C
 - to unit = "yr"
 - 
 # Week End Date Calculation (Assume 1st row of the date column is D2
-1. (Sat-Fri)  
+1. (Sat-Fri) Week End Friday  
    =D2+(7-WEEKDAY(D2,16))
-3. (Mon-Sun)  
+3. (Mon-Sun) Week End Sunday   
    =D2+(7-WEEKDAY(D2,2))
 
 
