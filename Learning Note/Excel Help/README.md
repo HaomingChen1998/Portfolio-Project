@@ -79,4 +79,7 @@ https://www.youtube.com/watch?v=XG1kmcMg4A8
 4. Right Click -> Group (You can change the name for the column and the group)
 5. Right Click -> Expand/Collapse -> Collapse Entire Field. (To see the sum of those group)
 
-# Groupby Columns in Pivot Table
+# xlookup (default is exact match)
+- lookup_value: what you looking for
+- lookup_array: where can you find the above value from
+- return_array: what do you want to get back? (Select column you want to return)
