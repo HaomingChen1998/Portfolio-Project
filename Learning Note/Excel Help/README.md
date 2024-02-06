@@ -71,3 +71,11 @@ Column  A           B          C
 6. Click on any cell on the pivot table -> Design -> Grand Totals -> off for rows and columns
 7. Click on any cell in the date column value, ungroup
 
+# Groupby Rows in Pivot Table
+1. Create Pivot Table
+2. Click on any cell on the pivot table -> Design -> Report Layout -> Show in Tabular Form
+3. Hold down ctrl key, and mouse left click to select the rows you want to groupby
+4. Right Click -> Group (You can change the name for the column and the group)
+5. Right Click -> Expand/Collapse -> Collapse Entire Field. (To see the sum of those group)
+
+# Groupby Columns in Pivot Table
