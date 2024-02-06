@@ -59,7 +59,7 @@ Column  A           B          C
 - from_unit = "day"
 - to unit = "yr"
 - 
-# Week End Date Calculation (Assume 1st row of the date column is D2
+# Week End Date (Assume 1st row of the date column is D2
 1. (Sat-Fri) Week End Friday  
    =D2+(7-WEEKDAY(D2,16))
 - (Mon-Sun) Week End Sunday   
@@ -67,4 +67,5 @@ Column  A           B          C
 2. Create Pivot Table -> Drag all the columns you want to rows, measure value to value field.
 3. Click on any cell on the pivot table -> Design -> Report Layout -> Show in Tabular Form
 4. Click on any cell on the pivot table -> Design -> Report Layout -> Repeat Item Labels
+5. Right Click on the *Total* cell without the pivot table, and Uncheck Subtotal*. Ex: Digital Video Total
 
