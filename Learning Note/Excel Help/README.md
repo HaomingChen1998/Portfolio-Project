@@ -59,7 +59,8 @@ Column  A           B          C
 - from_unit = "day"
 - to unit = "yr"
 - 
-# Week End Date (Assume 1st row of the date column is D2
+# Week End Date (Assume 1st row of the date column is D2  
+https://www.youtube.com/watch?v=XG1kmcMg4A8  
 1. (Sat-Fri) Week End Friday  
    =D2+(7-WEEKDAY(D2,16))
 - (Mon-Sun) Week End Sunday   
