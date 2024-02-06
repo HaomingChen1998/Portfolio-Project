@@ -67,5 +67,7 @@ Column  A           B          C
 2. Create Pivot Table -> Drag all the columns you want to rows, measure value to value field.
 3. Click on any cell on the pivot table -> Design -> Report Layout -> Show in Tabular Form
 4. Click on any cell on the pivot table -> Design -> Report Layout -> Repeat Item Labels
-5. Right Click on the *Total* cell without the pivot table, and Uncheck Subtotal*. Ex: Digital Video Total
+5. Click on any cell on the pivot table -> Design -> Subtotals -> Do not show subtotals
+6. Click on any cell on the pivot table -> Design -> Grand Totals -> off for rows and columns
+7. Right Click on the *Total* cell without the pivot table, and Uncheck Subtotal*. Ex: Digital Video Total
 
