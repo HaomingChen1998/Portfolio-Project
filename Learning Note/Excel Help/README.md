@@ -83,3 +83,7 @@ https://www.youtube.com/watch?v=XG1kmcMg4A8
 - lookup_value: what you looking for
 - lookup_array: where can you find the above value from
 - return_array: what do you want to get back? (Select column you want to return)
+
+# AutoFill (Double Click ⤷ doesn't work)
+- Select the entire column
+- Ctrl + D
