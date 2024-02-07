@@ -28,14 +28,6 @@
 1. Absolute Reference: when you drag down the formula, it locks on to a specific value, instead of looking for the value in next row to do the calculation.
 2. Relative Reference: when you drag down the formula, it looks for the value in next row to do the calculation.
 
-# Resize Table Error (Can't move cells in a filtered range or table):
-1. Remove the table first
-- Click anywhere inside the table to activate it.
-- Go to the 'Table Design' tab in the Excel toolbar.
-- Click on the 'Convert to Range' button.
-2. Create this table with a new range again
-- Insert -> Table
-
 # Record Macro
 1. View -> Macros -> Record Macro [Make sure Use Relative References is checked]
 2. When done recording -> View -> Macros -> Stop Recording
@@ -85,5 +77,16 @@ https://www.youtube.com/watch?v=XG1kmcMg4A8
 - return_array: what do you want to get back? (Select column you want to return)
 
 # AutoFill (Double Click ⤷ doesn't work)
-- Select the entire column
-- Ctrl + D
+1. Select the entire column
+2. Ctrl + D
+
+# Clear all filters
+1. Data -> Next to Filter (Clear)
+
+# Can't paste values errors:
+1. Resize Table Error (Can't move cells in a filtered range or table):
+- Remove the table first by clicking anywhere inside the table to activate it.
+- Table Design -> Convert to Range -> Insert -> Table
+2. When trying to get rid of formula by re-paste:
+- Make sure the filters are cleared: Data -> Next to Filter (Clear)
+- Paste data to another sheet as value, then paste it back.
