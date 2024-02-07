@@ -73,8 +73,8 @@ https://www.youtube.com/watch?v=XG1kmcMg4A8
 
 # xlookup (default is exact match)
 - lookup_value: what you looking for 
-- lookup_array: where can you find the above value from (SQL: FROM TABLE)
-- return_array: what do you want to get back? (Select column you want to return) (SQL: SELECT Statement: Final output you want to return)
+- lookup_array: where can you find the above value from (SQL: FROM TABLE) (Need to press F4)
+- return_array: what do you want to get back? (Select column you want to return) (SQL: SELECT Statement: Final output you want to return) (Need to press F4)
 
 # AutoFill (Double Click ⤷ doesn't work)
 1. Select the entire column
