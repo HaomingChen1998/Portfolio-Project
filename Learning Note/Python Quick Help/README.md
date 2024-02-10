@@ -168,6 +168,7 @@ git commit -m "your_message_here"
 
 # if error, refer back to "git remote -v" code line
 git push -u origin main
+git push -f origin main
 ```
 How others can collaborate me:
 1. Go to github -> next to profile icon, click on inbox icon.
