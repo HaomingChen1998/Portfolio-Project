@@ -305,6 +305,25 @@ python setup.py install
 # If you downloaded package that has "setup.py" in root folder, you can install it by running
 python setup.py install
 ```
+# Logger
+
+```
+import logging
+
+logging.basicConfig(level=logging.INFO, filename="log.log", filemode="w", 
+                    format="%(asctime)s - %(levelname)s - %(message)s") # log everything at the info level and above, so it will skip debug level.
+
+#If you want to reset log config settings
+import logging
+for handler in logging.root.handlers[:]:
+    logging.root.removeHandler(handler)
+
+logging.debug("debug")
+logging.info("info")
+logging.warning("warning")
+logging.error("error")
+logging.critical("critical")
+```
 
 # Python Debug
 
