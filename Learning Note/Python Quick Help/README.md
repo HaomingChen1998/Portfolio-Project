@@ -77,7 +77,7 @@ if not any(BestMarkets_aux_set.apply(lambda x: include_markets_set1.issubset(x))
         "Available combinations are:\n"
         f"{BestMarkets_aux_set}."
     )
-    logger.error(message)
+    print(message)
     raise ValueError(message)
 
 ```
@@ -310,8 +310,12 @@ python setup.py install
 ```
 import logging
 
-logging.basicConfig(level=logging.INFO, filename="log.log", filemode="w", 
-                    format="%(asctime)s - %(levelname)s - %(message)s") # log everything at the info level and above, so it will skip debug level.
+# Only set up once, and comment out after.
+# level=logging.INFO logs everything at the info level and above, so it will skip debug level.
+# filemode="w" will rewrite previous log.log file.
+# format="%(asctime)s - %(levelname)s - %(message)s" logs time.
+logging.basicConfig(level=logging.INFO, filename="log.log", filemode="w",
+                    format="%(asctime)s - %(levelname)s - %(message)s")
 
 #If you want to reset log config settings
 import logging
