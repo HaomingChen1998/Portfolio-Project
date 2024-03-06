@@ -11,6 +11,7 @@ df = pd.read_excel(https://raw.githubusercontent.com/HaomingChen1998/excel.xlsx)
 pd.options.display.max_columns = 200
 plt.style.use('ggplot')
 df.drop(['column_name'], axis=1)
+reset_index(drop=True).to_frame() # show dataframe without index column
 df.rename(columns={'old_name':'new_name', 'old_name2':'new_name2'})
 df.columns = df.columns.str.replace(' ', '_')          # Replace space with underscore.
 df.name.str.split(' ', expand=True)     # Split the names under the name column into different columns when there is a space.
