@@ -10,6 +10,7 @@
 df = pd.read_excel(https://raw.githubusercontent.com/HaomingChen1998/excel.xlsx) # Read csv from github: change github.com to raw.githubusercontent.com
 pd.options.display.max_columns = 200
 plt.style.use('ggplot')
+df.sort_values(by = ["first_name","order_details"], ascending=[True, True])
 # duplicated column from first column kept as it is, second column ends with _y
 dfNew = df.merge(df2, left_index=True, right_index=True,how='outer', suffixes=('', '_y'))
 # drop the columns end with _y, which is df2.
