@@ -15,6 +15,9 @@ plt.style.use('ggplot')
 df['unique_key'] = df['shipment_id'].astype(str) + '-' + df['sub_id'].astype(str)
 df['unique_key'] = df['shipment_id'].astype(str).str.cat(df[['sub_id', 'other_cols']].astype(str), sep="_")
 
+# date format in YYYY-MM
+df['date'] = df.columns_name.dt.strftime('%Y-%m')
+
 df.sort_values(by = ["first_name","order_details"], ascending=[True, True])
 # duplicated column from first column kept as it is, second column ends with _y
 dfNew = df.merge(df2, left_index=True, right_index=True,how='outer', suffixes=('', '_y'))
