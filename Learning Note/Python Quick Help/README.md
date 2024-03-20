@@ -20,7 +20,7 @@ df = pd.read_excel(https://raw.githubusercontent.com/HaomingChen1998/excel.xlsx)
 
 # dataframe settings
 pd.options.display.max_columns = None
-pd.options.display.max_rows = None
+pd.options.display.max_rows = 1000
 pd.options.display.max_colwidth = 1000
 pd.option.display.expand_frame_repr = True
 pd.options.display.width = 1000
