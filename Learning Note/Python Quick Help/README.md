@@ -7,6 +7,77 @@
 
 # Helpful Syntax
 ```
+# Read csv from github: change github.com to raw.githubusercontent.com
+df = pd.read_excel(https://raw.githubusercontent.com/HaomingChen1998/excel.xlsx)
+
+# Python dataframe settings
+pd.options.display.max_columns = None
+pd.options.display.max_rows = 1000
+pd.options.display.max_colwidth = 1000
+pd.option.display.expand_frame_repr = True
+pd.options.display.width = 1000
+plt.style.use('ggplot')
+
+# Combine multiple columns into 1 column
+df['unique_key'] = df['shipment_id'].astype(str) + '-' + df['sub_id'].astype(str)
+df['unique_key'] = df['shipment_id'].astype(str).str.cat(df[['sub_id', 'other_cols']].astype(str), sep="_")
+
+# Date format in YYYY-MM
+df['date'] = df.columns_name.dt.strftime('%Y-%m')
+
+# Sort Values
+df.sort_values(by = ["first_name","order_details"], ascending=[True, True])
+
+# Duplicated column from first column kept as it is, second column ends with _y
+dfNew = df.merge(df2, left_index=True, right_index=True,how='outer', suffixes=('', '_y'))
+# drop the columns end with _y, which is df2.
+dfNew.drop(dfNew.filter(regex='_y$').columns, axis=1, inplace=True)
+df.drop(['column_name'], axis=1)
+
+# Show dataframe without index column
+reset_index(drop=True).to_frame()
+
+# Rename Columns
+df.rename(columns={'old_name':'new_name', 'old_name2':'new_name2'})
+
+# Replace column space with underscore.
+df.columns = df.columns.str.replace(' ', '_')
+
+# Split the names under the name column into different columns when there is a space.
+df.name.str.split(' ', expand=True)
+
+df.groupby(['col1','col2']).agg({'col3':'sum','col4':'sum','col5':np.average})
+
+df.column_name.shift(1) # Shift that column down by 1
+
+# method='first' is like row_number, dense is like dense_rank
+df['rank'] = df.total_emails.rank(method='first', ascending=False)
+
+df['Timestamp'] = df['Timestamp'].astype('datetime64[ns]')
+
+df.query('pricecategory.isin(["Low", "High"])')
+
+# Similar to SQL ilike, case=False: case-insensitive, you can do without.
+dma13.query('dma.str.contains("atlanta", case=False)')
+
+# Count the number of occurrences of each unique value. Ex: Male 30, Female 29
+df['Gender'].value_counts()
+
+pd.to_numeric(df.col_three, errors='coerce'.fillna(0)
+
+# Show rows where genre column is Action OR Drama OR Western. Add~ before movies.genre for is not.
+movies[movies.genre.isin(['Action', 'Drama', 'Western'])]
+
+# Convert continuous data into categorical data, age 0-18 for child, 18-25 for young adult, etc.
+pd.cut(titanic.Age, bins=[0, 18, 25, 99], labels=['child', 'young adult', 'adult'])
+
+iloc[] only accept numbers inside [], but when you refer to a column name inside [], you should use loc. Ex:df1.loc[:3, 'column_name'].
+
+# Different ways to export as csv from vscode
+results.to_csv(r'C:\Users\Cody\Desktop\results.csv', index=False)
+results.to_csv('C:/Users/Cody/Desktop/results.csv', index=False)
+results.to_csv('results.csv', index=False)
+
 # Create dataframe
 df = pd.DataFrame(
     {
@@ -14,69 +85,6 @@ df = pd.DataFrame(
         'open' : [0.5, 'other']
         }
     )
-
-# Read csv from github: change github.com to raw.githubusercontent.com
-df = pd.read_excel(https://raw.githubusercontent.com/HaomingChen1998/excel.xlsx)
-
-# dataframe settings
-pd.options.display.max_columns = None
-pd.options.display.max_rows = 1000
-pd.options.display.max_colwidth = 1000
-pd.option.display.expand_frame_repr = True
-pd.options.display.width = 1000
-
-plt.style.use('ggplot')
-
-# Combine multiple columns into 1 column
-df['unique_key'] = df['shipment_id'].astype(str) + '-' + df['sub_id'].astype(str)
-df['unique_key'] = df['shipment_id'].astype(str).str.cat(df[['sub_id', 'other_cols']].astype(str), sep="_")
-
-# date format in YYYY-MM
-df['date'] = df.columns_name.dt.strftime('%Y-%m')
-
-df.sort_values(by = ["first_name","order_details"], ascending=[True, True])
-# duplicated column from first column kept as it is, second column ends with _y
-dfNew = df.merge(df2, left_index=True, right_index=True,how='outer', suffixes=('', '_y'))
-# drop the columns end with _y, which is df2.
-dfNew.drop(dfNew.filter(regex='_y$').columns, axis=1, inplace=True)
-df.drop(['column_name'], axis=1)
-reset_index(drop=True).to_frame() # show dataframe without index column
-df.rename(columns={'old_name':'new_name', 'old_name2':'new_name2'})
-df.columns = df.columns.str.replace(' ', '_')          # Replace space with underscore.
-df.name.str.split(' ', expand=True)     # Split the names under the name column into different columns when there is a space.
-df.groupby('from_user').size().to_frame('total_emails').reset_index() # Group by from users, and count how many times the same value repeated.  to_frame gives this count column a name. reset_index treats index as column, in this case, it shows from_user column.
-df.groupby(['col1','col2']).agg({'col3':'sum','col4':'sum','col5':np.average})
-df.column_name.shift(1) # Shift that column down by 1
-df['rank'] = df.total_emails.rank(method='first', ascending=False) # method='first' is like row_number, dense is like dense_rank
-df['Timestamp'] = df['Timestamp'].astype('datetime64[ns]')
-df.query('Coaster_Name == "Beach"')           # show data when coaster_name = beach
-df.query('pricecategory.isin(["Low", "High"])')
-dma13.query('dma.str.contains("atlanta", case=False)') # Similar to SQL ilike, case=False: case-insensitive, you can do without.
-df['Gender'].value_counts()                     # count the number of occurrences of each unique value. Ex: Male 30, Female 29
-pd.DataFrame(np.random.rand(4,8))                # Create an example DataFrame to quickly show something
-pd.to_numeric(df.col_three, errors='coerce'.fillna(0)
-movies[movies.genre.isin(['Action', 'Drama', 'Western'])] # Show rows where genre column is Action OR Drama OR Western. Add~ before movies.genre for is not.
-pd.cut(titanic.Age, bins=[0, 18, 25, 99], labels=['child', 'young adult', 'adult']) Convert continuous data into categorical data, age 0-18 for child, 18-25 for young adult, etc.
-df.columns = df.columns.str.replace(' ', '_').str.lower()
-iloc[] only accept numbers inside [], but when you refer to a column name inside [], you should use loc. Ex:df1.loc[:3, 'column_name'].
-result_name.to_csv(r'C:\Users\codchen1\Desktop\file_name.csv', index=False)
-
-# Different ways to export as csv from vscode
-results.to_csv(r'C:\Users\Cody\Desktop\results.csv', index=False)
-
-results.to_csv('C:/Users/Cody/Desktop/results.csv', index=False)
-
-results.to_csv('results.csv', index=False)
-
-
-import csv
-# exporting a string variable into the csv file
-input_variable = "GeeksForGeeks"
-# Example.csv gets created in the current working directory
-with open('Example.csv', 'w', newline = '') as csvfile:
-    my_writer = csv.writer(csvfile, delimiter = ' ')
-    my_writer.writerow(input_variable)
-
 
 # Create a dataframe with just rows (no column names)
 # Specify each row as a list
