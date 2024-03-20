@@ -7,15 +7,24 @@
 
 # Helpful Syntax
 ```
-# create dataframe
+# Create dataframe
 df = pd.DataFrame(
     {
         'index' : ['user_count', 1],
         'open' : [0.5, 'other']
         }
     )
-df = pd.read_excel(https://raw.githubusercontent.com/HaomingChen1998/excel.xlsx) # Read csv from github: change github.com to raw.githubusercontent.com
-pd.options.display.max_columns = 200
+
+# Read csv from github: change github.com to raw.githubusercontent.com
+df = pd.read_excel(https://raw.githubusercontent.com/HaomingChen1998/excel.xlsx)
+
+# dataframe settings
+pd.options.display.max_columns = None
+pd.options.display.max_rows = None
+pd.options.display.max_colwidth = 1000
+pd.option.display.expand_frame_repr = True
+pd.options.display.width = 1000
+
 plt.style.use('ggplot')
 
 # Combine multiple columns into 1 column
