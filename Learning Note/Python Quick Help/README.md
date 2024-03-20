@@ -7,6 +7,13 @@
 
 # Helpful Syntax
 ```
+# create dataframe
+df = pd.DataFrame(
+    {
+        'index' : ['user_count', 1],
+        'open' : [0.5, 'other']
+        }
+    )
 df = pd.read_excel(https://raw.githubusercontent.com/HaomingChen1998/excel.xlsx) # Read csv from github: change github.com to raw.githubusercontent.com
 pd.options.display.max_columns = 200
 plt.style.use('ggplot')
