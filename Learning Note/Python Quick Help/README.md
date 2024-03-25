@@ -48,6 +48,9 @@ df.name.str.split(' ', expand=True)
 
 df.groupby(['col1','col2']).agg({'col3':'sum','col4':'sum','col5':np.average})
 
+# partition by
+df['avg_salary'] = df.groupby("department").transform('mean')['salary']
+
 df.column_name.shift(1) # Shift that column down by 1
 
 # method='first' is like row_number, dense is like dense_rank
