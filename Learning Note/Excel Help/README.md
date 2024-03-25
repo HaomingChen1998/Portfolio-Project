@@ -92,8 +92,7 @@ https://www.youtube.com/watch?v=XG1kmcMg4A8
 - Paste data to another sheet as value, then paste it back.
 
 # Calculate average salary for each department:
-Given that  "Column G" is "department column" and Column H is "salary column" 
-G:G, G2 (for each department), H:H (return me the average salary)
-
+- Given that  "Column G" is "department column" and Column H is "salary column" 
+- G:G, G2 (for each department), H:H (return me the average salary)  
 =AVERAGEIF(G:G, G2, H:H)
 
