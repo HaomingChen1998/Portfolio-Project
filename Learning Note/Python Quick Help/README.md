@@ -18,6 +18,9 @@ pd.option.display.expand_frame_repr = True
 pd.options.display.width = 1000
 plt.style.use('ggplot')
 
+# check if there are any duplicates for user_id column
+df.user_id.duplicated().any()
+
 # Combine multiple columns into 1 column
 df['unique_key'] = df['shipment_id'].astype(str) + '-' + df['sub_id'].astype(str)
 df['unique_key'] = df['shipment_id'].astype(str).str.cat(df[['sub_id', 'other_cols']].astype(str), sep="_")
