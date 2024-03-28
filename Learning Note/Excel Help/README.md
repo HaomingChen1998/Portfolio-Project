@@ -97,4 +97,4 @@ https://www.youtube.com/watch?v=XG1kmcMg4A8
 =AVERAGEIF(G:G, G2, H:H)
 
 # convert date to year month format, yyyy-mm
-=TEXT(D2, "yyyy/mm"
+=TEXT(D2, "yyyy/mm")
