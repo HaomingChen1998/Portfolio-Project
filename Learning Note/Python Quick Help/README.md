@@ -28,6 +28,11 @@ df['date'] = df.columns_name.dt.strftime('%Y-%m')
 # Sort Values
 df.sort_values(by = ["first_name","order_details"], ascending=[True, True])
 
+# All values to lower case
+for col in df.columns:
+    if df[col].dtype == object:
+        df[col] = df[col].str.lower()
+
 # Duplicated column from first column kept as it is, second column ends with _y
 dfNew = df.merge(df2, left_index=True, right_index=True,how='outer', suffixes=('', '_y'))
 # drop the columns end with _y, which is df2.
