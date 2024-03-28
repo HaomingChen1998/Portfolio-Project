@@ -96,3 +96,5 @@ https://www.youtube.com/watch?v=XG1kmcMg4A8
 - G:G, G2 (for each department), H:H (return me the average salary)  
 =AVERAGEIF(G:G, G2, H:H)
 
+# convert date to year month format, yyyy-mm
+=TEXT(D2, "yyyy/mm"
