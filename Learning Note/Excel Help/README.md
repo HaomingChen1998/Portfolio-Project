@@ -98,3 +98,12 @@ https://www.youtube.com/watch?v=XG1kmcMg4A8
 
 # convert date to year month format, yyyy-mm
 =TEXT(D2, "yyyy/mm")
+
+# TEXTJOIN
+=TEXTJOIN("_",FALSE,F2,C2,D2)
+
+# Find the unique count of a column after group by  
+df.groupby(['client_id', 'time_id'])['user_id'].nunique()
+- Create a unique key column for all the columns I grouped by, and the column I want find the unique count:  
+=TEXTJOIN("_",FALSE,F2,C2,D2)     # F2 = client_id, C2 = time_id, D2 = user_id column
+- Create a pivot table, group by client_id and time_id by putting them in rows, and then put text_join column in value.
