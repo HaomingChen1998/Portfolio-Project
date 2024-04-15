@@ -41,6 +41,10 @@ dfNew = df.merge(df2, left_index=True, right_index=True,how='outer', suffixes=('
 # drop the columns end with _y, which is df2.
 dfNew.drop(dfNew.filter(regex='_y$').columns, axis=1, inplace=True)
 df.drop(['column_name'], axis=1)
+# Method 2 to drop columns ending in _drop
+df = pd.merge(df, linkedin_employees, left_on="emp_id", right_on="id", suffixes=("_drop", "_drop"))
+cols_to_drop = df.filter(regex="_drop$").columns
+df.drop(columns=cols_to_drop, inplace=True)
 
 # Show dataframe without index column
 reset_index(drop=True).to_frame()
