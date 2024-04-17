@@ -248,6 +248,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 & c:/Users/Cody/Desktop/Default_Python/Scripts/Activate.ps1
 # You can also activate with relative path
 .\Scripts\activate
+# When the folder has space
+& ".\Monitor Environment\Scripts\activate"
 
 # Check virtual environment being used right now, the top python path has priority.
 where.exe python
