@@ -239,7 +239,7 @@ How others can collaborate me:
 # Make sure you have already installed your desire python version which can be downloaded at https://www.python.org/downloads/
 
 # Create a virtual environment using the path of your desired python version, replace the python path accordingly.
-C:\Users\codchen1\AppData\Local\Programs\Python\Python312\python.exe -m venv .
+C:\Users\Cody\AppData\Local\Programs\Python\Python311\python.exe -m venv .
 
 # Allow Activate.ps1 to run (executed from the VSCode terminal)
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
