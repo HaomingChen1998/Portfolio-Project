@@ -297,9 +297,9 @@ git commit -m 'your comment' path/to/your/file.txt
 then push to the branch
 
 # Creates a new branch and push to that branch
-git branch newBranch master # Creates a new branch called "newBranch" base on the master branch.
-git checkout newBranch # Switches to "newBranch" branch
-git push -u origin newBranch # Pushes to that branch
+git branch covariate_ui main # Creates a new branch called "covariate_ui" base on the master branch.
+git checkout covariate_ui # Switches to "covariate_ui" branch
+git push -u geolift_remote covariate_ui # Pushes to that branch
 ```
 
 **Error Handling for Using Virtual Environment:**
