@@ -81,7 +81,7 @@ https://www.youtube.com/watch?v=XG1kmcMg4A8
 2. Ctrl + D
 
 # Clear all filters
-1. Data -> Next to Filter (Clear)
+1. Ctrl+Shift+L / Data -> Next to Filter (Clear)
 
 # Can't paste values errors:
 1. Resize Table Error (Can't move cells in a filtered range or table):
