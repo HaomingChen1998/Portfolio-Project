@@ -257,6 +257,8 @@ where.exe python
 # Install all the packages from requirements.txt
 pip install -r requirements.txt
 
+python -m pip install -r C:\Users\codchen1\Desktop\GeoLift_ROAI\ROAI_Pfizer\requirements.txt
+
 # Uninstall all the packages from requirements.txt
 pip uninstall -r requirements.txt -y
 
